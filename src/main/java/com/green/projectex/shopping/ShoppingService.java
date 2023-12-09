@@ -17,6 +17,9 @@ public class ShoppingService {
 
     //구매 예정 상품 목록 리스트
     public List<ShoppingListVo> getShoppingList(ShoppingListDto dto) {
+        if(dto.getIsList() == 3){
+            return null;
+        }
         return mapper.selShoppingList(dto);
     }
 
