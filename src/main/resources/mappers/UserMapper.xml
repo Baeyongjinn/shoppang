@@ -4,7 +4,8 @@
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.green.projectex.shopping.ShoppingMapper">
     <select id="selShoppingList">
-        SELECT b.category_pk as categoryList,a.product_nm as productNm,a.memo,
+        SELECT a.product_pk as productPk,
+        b.category_nm as categoryNm,a.product_nm as productNm,a.memo,
         if(a.product_count = 1 ,null,a.product_count) AS product_count, a.buying_check as buyingCheck ,a.buying_date as
         buyingDate
         FROM t_purchase_product a
@@ -39,9 +40,30 @@
 
     <!-- 구매 확정 -->
     <update id="patchProduct">
-        UPDATE t_product_list
+        UPDATE t_purchase_product
         SET buying_check = #{buyingCheck}
         ,buying_date = NOW()
-        WHERE i_product_list = #{productPk}
+        WHERE product_pk = #{productPk}
     </update>
+
+    <!-- 구매 예정상품 수정 -->
+    <update id="putProduct">
+        UPDATE t_purchase_product
+        SET
+        <if test="productNm != null and productNm != ''">
+        product_nm = #{productNm}
+        </if>
+        <if test="categoryPk != null and categoryPk != ''">
+            ,category_pk = #{categoryPk}
+        </if>
+        <if test="memo != null and memo != ''">
+            ,memo = #{memo}
+        </if>
+        WHERE product_pk = #{productPk} AND buying_check = 0
+    </update>
+
+    <delete id="delProduct">
+        DELETE FROM t_purchase_product
+        WHERE product_pk = #{productPk} AND buying_check = 0
+    </delete>
 </mapper>

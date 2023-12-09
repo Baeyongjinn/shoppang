@@ -1,10 +1,7 @@
 package com.green.projectex.shopping;
 
 import com.green.projectex.common.ResVo;
-import com.green.projectex.shopping.model.ProductInsDto;
-import com.green.projectex.shopping.model.ProductPatchDto;
-import com.green.projectex.shopping.model.ShoppingListDto;
-import com.green.projectex.shopping.model.ShoppingListVo;
+import com.green.projectex.shopping.model.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -34,6 +31,22 @@ public class ShoppingService {
 
     public ResVo patchProductCheck(ProductPatchDto dto){
         int result = mapper.patchProduct(dto);
+        if(result == 0){
+            return new ResVo(0);
+        }
+        return new ResVo(1);
+    }
+
+    public ResVo putProduct(ProductPutDto dto){
+        int result = mapper.putProduct(dto);
+        if(result == 0) {
+            return new ResVo(0);
+        }
+        return new ResVo(1);
+    }
+
+    public ResVo delProduct(ProductDelDto dto) {
+        int result = mapper.delProduct(dto);
         if(result == 0){
             return new ResVo(0);
         }

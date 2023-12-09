@@ -5,8 +5,10 @@ import lombok.Data;
 
 @Data
 public class ShoppingListVo {
-    @Schema(title = "상품 카테고리")
-    private String categoryList;
+    @Schema(title = "상품 PK")
+    private int productPk;
+    @Schema(title = "카테고리 이름")
+    private String categoryNm;
     @Schema(title = "상품 이름")
     private String productNm;
     @Schema(title = "메모")

@@ -2,10 +2,7 @@ package com.green.projectex.shopping;
 
 
 import com.green.projectex.common.ResVo;
-import com.green.projectex.shopping.model.ProductInsDto;
-import com.green.projectex.shopping.model.ProductPatchDto;
-import com.green.projectex.shopping.model.ShoppingListDto;
-import com.green.projectex.shopping.model.ShoppingListVo;
+import com.green.projectex.shopping.model.*;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -39,8 +36,22 @@ public class ShoppingController {
 
     @PatchMapping()
     @Operation(summary = "구매 확정", description = "구매 확정 처리")
-    public ResVo patchProductCheck(ProductPatchDto dto) {
+    public ResVo patchProductCheck(@RequestBody ProductPatchDto dto) {
         log.info("dto: {}",dto);
         return service.patchProductCheck(dto);
+    }
+
+    @PutMapping("/put")
+    @Operation(summary = "구매예정 상품 수정", description = "구매예정 상품 수정 처리")
+    public ResVo putProduct(@RequestBody ProductPutDto dto){
+        log.info("dto: {}",dto);
+        return service.putProduct(dto);
+    }
+
+    @DeleteMapping
+    @Operation(summary = "구매 예저 상품 삭제", description = "구매 예정 상품 삭제 처리")
+    public ResVo delProduct(ProductDelDto dto){
+        log.info("dto: {}", dto);
+        return service.delProduct(dto);
     }
 }
