@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.green.projectex.shopping.ShoppingMapper">
+<select id="selShoppingList">
+    SELECT b.category_pk as categoryList,a.product_nm as productNm,a.memo,
+    if(a.product_count = 1 ,null,a.product_count) AS product_count, a.buying_check as buyingCheck ,a.buying_date as buyingDate
+    FROM t_purchase_product a
+    JOIN t_category b
+    ON a.category_pk = b.category_pk
+    <choose>
+    <when test="isList = 0">
+        WHERE (a.user_pk = #{iuser} > a.buying_check) ![CON 3
+    </when>
+        <when test="isList = 1">
+            WHERE a.user_pk = #{iuser} AND a.buying_check = 1
+        </when>
+        <when test="isList = 2">
+            WHERE a.user_pk = #{iuser} AND a.buying_check = 2
+        </when>
+    </choose>
+</select>
+
+    <insert id="insProduct">
+        INSERT INTO t_purchase_product
+        SET category_pk = #{categoryPk}
+            ,user_pk = #{userPk}
+            ,product_nm = #{productNm}
+        <if test="memo != '' and memo != null">
+            ,memo = #{memo}
+        </if>
+        <if test="productCount != 0 and productCount != null">
+            ,product_count = #{productCount}
+        </if>
+    </insert>
+
+    <!-- 구매 확정 -->
+    <update id="patchProduct">
+        UPDATE t_product_list
+        SET buying_check = #{buyingCheck}
+        ,buying_date = NOW()
+        WHERE i_product_list = #{productPk}
+    </update>
+</mapper>
