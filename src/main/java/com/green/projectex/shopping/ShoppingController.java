@@ -21,7 +21,7 @@ public class ShoppingController {
     private final ShoppingService service;
 
     @GetMapping
-    @Operation(summary = "구매 목록 조회", description = "구매 목록 조회 처리")
+    @Operation(summary = "구매 목록 조회", description = "구매 목록 조회 처리(isList:0 모두 보기, 1:구매예정 상품 보기 , 2: 구매확정 상품 보기)")
     public List<ShoppingListVo> getShoppingList(ShoppingListDto dto) {
         log.info("dto: {}",dto);
         return service.getShoppingList(dto);
@@ -49,9 +49,16 @@ public class ShoppingController {
     }
 
     @DeleteMapping
-    @Operation(summary = "구매 예저 상품 삭제", description = "구매 예정 상품 삭제 처리")
+    @Operation(summary = "구매 예정 상품 삭제", description = "구매 예정 상품 삭제 처리")
     public ResVo delProduct(ProductDelDto dto){
         log.info("dto: {}", dto);
         return service.delProduct(dto);
+    }
+
+    @PatchMapping("/confiremd")
+    @Operation(summary = "구매 확정 상품 삭제", description = "구매 확정 상품 삭제 처리")
+    public ResVo patchConfirmed(ProductPatchDto dto) {
+        log.info("dto: {}",dto);
+        return service.patchConfirmed(dto);
     }
 }

@@ -1,6 +1,5 @@
 package com.green.projectex.shopping.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
@@ -16,7 +15,7 @@ public class ProductInsDto {
     private String productNm;
     @Schema(title = "메모")
     private String memo;
-    @Schema(title = "수량")
-    private int productCount;
+//    @Schema(title = "수량")
+//    private int productCount;
 
 }

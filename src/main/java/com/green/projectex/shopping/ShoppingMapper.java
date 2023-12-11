@@ -17,4 +17,6 @@ public interface ShoppingMapper {
     int putProduct(ProductPutDto dto);
 
     int delProduct(ProductDelDto dto);
+
+    int patchConfirmed(ProductPatchDto dto);
 }

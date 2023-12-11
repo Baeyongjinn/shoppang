@@ -52,4 +52,12 @@ public class ShoppingService {
         }
         return new ResVo(1);
     }
+
+    public ResVo patchConfirmed(ProductPatchDto dto){
+        int result = mapper.patchConfirmed(dto);
+        if(result == 0) {
+            return new ResVo(0);
+        }
+        return new ResVo(1);
+    }
 }

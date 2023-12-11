@@ -33,15 +33,12 @@
         <if test="memo != '' and memo != null">
             ,memo = #{memo}
         </if>
-        <if test="productCount != 0 and productCount != null">
-            ,product_count = #{productCount}
-        </if>
     </insert>
 
     <!-- 구매 확정 -->
     <update id="patchProduct">
         UPDATE t_purchase_product
-        SET buying_check = #{buyingCheck}
+        SET buying_check = 1
         ,buying_date = NOW()
         WHERE product_pk = #{productPk}
     </update>
@@ -66,4 +63,11 @@
         DELETE FROM t_purchase_product
         WHERE product_pk = #{productPk} AND buying_check = 0
     </delete>
+
+    <!-- 구매 확정 상품 삭제시 2로바꾸기 -->
+    <update id="patchConfirmed">
+        UPDATE t_purchase_product
+        SET buying_check = 2
+        WHERE buying_check = 1 and product_pk = #{productPk}
+    </update>
 </mapper>
