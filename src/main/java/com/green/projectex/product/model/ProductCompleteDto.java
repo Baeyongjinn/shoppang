@@ -6,6 +6,7 @@ import lombok.Data;
 @Data
 @Schema(description = "구매 확정 등록 Dto ")
 public class ProductCompleteDto {
-    @Schema(title = "상품Pk")
+
+    @Schema(title = "유저Pk")
     private int ProductPk;
 }
