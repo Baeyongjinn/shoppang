@@ -2333,3 +2333,10 @@ Was expecting one of:
 [2023-12-11 11:32:43 [32mINFO [0;39m http-nio-8080-exec-7] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
 [2023-12-11 11:32:47 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.product.ProductController] [36mdto: ProductListDto(iuser=1, isList=0)[0;39m
 [2023-12-11 11:35:08 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ProductListDto(iuser=1, isList=0)[0;39m
+[2023-12-11 11:47:38 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.product.ProductController] [36mdto: ProductListDto(iuser=1, isList=1)[0;39m
+[2023-12-11 11:54:16 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.product.ProductController] [36mdto: ProductListDto(iuser=1, isList=0)[0;39m
+[2023-12-11 11:54:38 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ProductListDto(iuser=1, isList=1)[0;39m
+[2023-12-11 11:54:58 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.product.ProductController] [36mdto: ProductListDto(iuser=1, isList=2)[0;39m
+[2023-12-11 11:57:17 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(productPk=24)[0;39m
+[2023-12-11 11:57:24 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(productPk=22)[0;39m
+[2023-12-11 11:58:43 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(productPk=24)[0;39m
