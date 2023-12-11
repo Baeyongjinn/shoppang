@@ -21,7 +21,7 @@ CREATE TABLE t_purchase_product(
     ,create_at DATETIME DEFAULT CURRENT_TIMESTAMP
     ,updated_at DATETIME ON UPDATE CURRENT_TIMESTAMP
     ,buying_check TINYINT(1) NOT NULL DEFAULT 0 CHECK(buying_check IN(0,1,2))
-    ,buying_date DATETIME ON UPDATE current_timestamp
+    ,buying_date DATE
     ,FOREIGN KEY(category_pk) REFERENCES t_category(category_pk)
     ,FOREIGN KEY(user_pk) REFERENCES t_user(user_pk)
 );
