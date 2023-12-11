@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.green.projectex.product.ProductMapper">
-    <select id="selShoppingList">
+    <select id="selProductList">
         SELECT a.product_pk as productPk,
         b.category_nm as categoryNm,a.product_nm as productNm,a.memo,
         if(a.product_count = 1 ,null,a.product_count) AS product_count, a.buying_check as buyingCheck ,a.buying_date as
@@ -11,7 +11,7 @@
         FROM t_purchase_product a
         JOIN t_category b
         ON a.category_pk = b.category_pk
-        WHERE a.user_pk = #{iuser}
+        WHERE a.user_pk = #{userPk}
         <choose>
             <when test="isList == 0">
                 AND a.buying_check <![CDATA[<]]> 2
@@ -48,7 +48,7 @@
         UPDATE t_purchase_product
         SET
         <if test="productNm != null and productNm != ''">
-        product_nm = #{productNm}
+            product_nm = #{productNm}
         </if>
         <if test="categoryPk != null and categoryPk != ''">
             ,category_pk = #{categoryPk}
@@ -59,15 +59,25 @@
         WHERE product_pk = #{productPk} AND buying_check = 0
     </update>
 
-    <delete id="delProduct">
+    <delete id="delProduct" parameterType="java.util.List">
         DELETE FROM t_purchase_product
-        WHERE product_pk = #{productPk} AND buying_check = 0
+        <where>
+            <foreach collection="productPk" item="productPk" separator="OR">
+                (product_pk = #{productPk} AND buying_check = 0)
+            </foreach>
+        </where>
     </delete>
 
     <!-- 구매 확정 상품 삭제시 2로바꾸기 -->
-    <update id="patchConfirmed">
+    <update id="patchConfirmed" parameterType="java.util.List">
         UPDATE t_purchase_product
-        SET buying_check = 2
-        WHERE buying_check = 1 and product_pk = #{productPk}
+        <set>
+            buying_check = 2
+        </set>
+        WHERE product_pk IN
+        <foreach collection="productPk" item="productPk" open="(" close=")" separator=",">
+            #{productPk}
+        </foreach>
+        AND buying_check = 1
     </update>
 </mapper>

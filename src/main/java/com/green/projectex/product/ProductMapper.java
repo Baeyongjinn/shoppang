@@ -8,11 +8,11 @@ import java.util.List;
 @Mapper
 public interface ProductMapper {
 
-    List<ProductListVo> selShoppingList(ProductListDto dto);
+    List<ProductListVo> selProductList(ProductListDto dto);
 
     int insProduct(ProductInsDto dto);
 
-    int patchProduct(ProductPatchDto dto);
+    int patchProduct(ProductCompleteDto dto);
 
     int putProduct(ProductPutDto dto);
 

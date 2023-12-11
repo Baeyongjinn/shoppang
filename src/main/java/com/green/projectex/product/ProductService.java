@@ -14,11 +14,11 @@ public class ProductService {
     private final ProductMapper mapper;
 
     //구매 예정 상품 목록 리스트
-    public List<ProductListVo> getShoppingList(ProductListDto dto) {
+    public List<ProductListVo> getProductList(ProductListDto dto) {
         if(dto.getIsList() > 2){
             return null;
         }
-        return mapper.selShoppingList(dto);
+        return mapper.selProductList(dto);
     }
 
     //성공: 1 실패: 0
@@ -30,7 +30,7 @@ public class ProductService {
         return new ResVo(Const.SUCCESS);
     }
 
-    public ResVo patchProductCheck(ProductPatchDto dto){
+    public ResVo patchProductCheck(ProductCompleteDto dto){
         int result = mapper.patchProduct(dto);
         if(result == 0){
             return new ResVo(Const.FAIL);
