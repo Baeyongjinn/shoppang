@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.green.projectex.shopping.ShoppingMapper">
+<mapper namespace="com.green.projectex.product.ProductMapper">
     <select id="selShoppingList">
         SELECT a.product_pk as productPk,
         b.category_nm as categoryNm,a.product_nm as productNm,a.memo,
@@ -13,13 +13,13 @@
         ON a.category_pk = b.category_pk
         WHERE a.user_pk = #{iuser}
         <choose>
-            <when test="isList == 0 and isList != 3">
+            <when test="isList == 0">
                 AND a.buying_check <![CDATA[<]]> 2
             </when>
-            <when test="isList == 1 and isList != 3">
+            <when test="isList == 1">
                 AND a.buying_check = 0
             </when>
-            <when test="isList == 2 and isList != 3">
+            <when test="isList == 2">
                 AND a.buying_check = 1
             </when>
         </choose>

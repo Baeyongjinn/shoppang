@@ -214,9 +214,9 @@ Caused by: org.xml.sax.SAXParseException: 예기치 않은 파일의 끝입니�
 [2023-12-07 14:53:42 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 14:53:42 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 14:53:42 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 0 ms[0;39m
-[2023-12-07 14:53:42 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 14:53:42 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 14:54:04 [32mINFO [0;39m http-nio-8080-exec-7] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 11 ms[0;39m
-[2023-12-07 14:54:07 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 14:54:07 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 14:54:21 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 0 deletions, 1 modification)[0;39m
 [2023-12-07 14:54:21 [32mINFO [0;39m Thread-34] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
 [2023-12-07 14:54:21 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarting ProjectexApplication using Java 17.0.8.1 with PID 1292 (D:\2023-second\java\projectex\target\classes started by Administrator in D:\2023-second\java\projectex)[0;39m
@@ -455,7 +455,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.green.projectex.shopping.ShoppingController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@dc98924]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.green.projectex.product.ProductController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@dc98924]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
 	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:460)
@@ -466,7 +466,7 @@ Caused by: java.lang.NoClassDefFoundError: com/green/projectex/shopping/model/Sh
 	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
 	... 26 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.ShoppingListDto
+Caused by: java.lang.ClassNotFoundException: com.green.projectex.product.model.ProductListDto
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
@@ -578,7 +578,7 @@ Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.
 [2023-12-07 15:10:28 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 15:10:28 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 15:10:28 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 0 ms[0;39m
-[2023-12-07 15:10:28 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1, array=createdAt)[0;39m
+[2023-12-07 15:10:28 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1, array=createdAt)[0;39m
 [2023-12-07 15:10:28 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
 [2023-12-07 15:10:28 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection org.mariadb.jdbc.Connection@b543e05[0;39m
 [2023-12-07 15:10:28 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
@@ -625,8 +625,8 @@ java.sql.SQLSyntaxErrorException: (conn=24) Unknown column 'created_at' in 'fiel
 	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy15/jdk.proxy15.$Proxy101.selShoppingList(Unknown Source)
-	at com.green.projectex.shopping.ShoppingService.getShoppingList(ShoppingService.java:16)
-	at com.green.projectex.shopping.ShoppingController.getShoppingList(ShoppingController.java:26)
+	at com.green.projectex.product.ProductService.getShoppingList(ShoppingService.java:16)
+	at com.green.projectex.product.ProductController.getShoppingList(ShoppingController.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -697,7 +697,7 @@ java.sql.SQLSyntaxErrorException: (conn=24) Unknown column 'created_at' in 'fiel
 [2023-12-07 15:20:36 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 15:20:36 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 15:20:36 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
-[2023-12-07 15:20:36 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1, array=createdAt)[0;39m
+[2023-12-07 15:20:36 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1, array=createdAt)[0;39m
 [2023-12-07 15:20:36 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Starting...[0;39m
 [2023-12-07 15:20:36 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-2 - Added connection org.mariadb.jdbc.Connection@7a28f591[0;39m
 [2023-12-07 15:20:36 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Start completed.[0;39m
@@ -744,8 +744,8 @@ java.sql.SQLSyntaxErrorException: (conn=34) Unknown column 'created_at' in 'fiel
 	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy17/jdk.proxy17.$Proxy103.selShoppingList(Unknown Source)
-	at com.green.projectex.shopping.ShoppingService.getShoppingList(ShoppingService.java:16)
-	at com.green.projectex.shopping.ShoppingController.getShoppingList(ShoppingController.java:26)
+	at com.green.projectex.product.ProductService.getShoppingList(ShoppingService.java:16)
+	at com.green.projectex.product.ProductController.getShoppingList(ShoppingController.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -796,7 +796,7 @@ java.sql.SQLSyntaxErrorException: (conn=34) Unknown column 'created_at' in 'fiel
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-[2023-12-07 15:21:16 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1, array=createdAt)[0;39m
+[2023-12-07 15:21:16 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1, array=createdAt)[0;39m
 [2023-12-07 15:21:16 [33mWARN [0;39m http-nio-8080-exec-6] [org.mariadb.jdbc.message.server.ErrorPacket] [36mError: 1054-42S22: Unknown column 'created_at' in 'field list'[0;39m
 [2023-12-07 15:21:16 [31mERROR[0;39m http-nio-8080-exec-6] [org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/].[dispatcherServlet]] [36mServlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: 
 ### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: (conn=34) Unknown column 'created_at' in 'field list'
@@ -840,8 +840,8 @@ java.sql.SQLSyntaxErrorException: (conn=34) Unknown column 'created_at' in 'fiel
 	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy17/jdk.proxy17.$Proxy103.selShoppingList(Unknown Source)
-	at com.green.projectex.shopping.ShoppingService.getShoppingList(ShoppingService.java:16)
-	at com.green.projectex.shopping.ShoppingController.getShoppingList(ShoppingController.java:26)
+	at com.green.projectex.product.ProductService.getShoppingList(ShoppingService.java:16)
+	at com.green.projectex.product.ProductController.getShoppingList(ShoppingController.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -912,7 +912,7 @@ java.sql.SQLSyntaxErrorException: (conn=34) Unknown column 'created_at' in 'fiel
 [2023-12-07 15:21:16 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 15:21:16 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 15:21:16 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
-[2023-12-07 15:21:16 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1, array=createdAt)[0;39m
+[2023-12-07 15:21:16 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1, array=createdAt)[0;39m
 [2023-12-07 15:21:16 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-3 - Starting...[0;39m
 [2023-12-07 15:21:16 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-3 - Added connection org.mariadb.jdbc.Connection@365ef175[0;39m
 [2023-12-07 15:21:16 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-3 - Start completed.[0;39m
@@ -959,8 +959,8 @@ java.sql.SQLSyntaxErrorException: (conn=44) Unknown column 'b.created_at' in 'fi
 	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy18/jdk.proxy18.$Proxy104.selShoppingList(Unknown Source)
-	at com.green.projectex.shopping.ShoppingService.getShoppingList(ShoppingService.java:16)
-	at com.green.projectex.shopping.ShoppingController.getShoppingList(ShoppingController.java:26)
+	at com.green.projectex.product.ProductService.getShoppingList(ShoppingService.java:16)
+	at com.green.projectex.product.ProductController.getShoppingList(ShoppingController.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1011,7 +1011,7 @@ java.sql.SQLSyntaxErrorException: (conn=44) Unknown column 'b.created_at' in 'fi
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-[2023-12-07 15:21:18 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1, array=createdAt)[0;39m
+[2023-12-07 15:21:18 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1, array=createdAt)[0;39m
 [2023-12-07 15:21:18 [33mWARN [0;39m http-nio-8080-exec-2] [org.mariadb.jdbc.message.server.ErrorPacket] [36mError: 1054-42S22: Unknown column 'b.created_at' in 'field list'[0;39m
 [2023-12-07 15:21:18 [31mERROR[0;39m http-nio-8080-exec-2] [org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/].[dispatcherServlet]] [36mServlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: 
 ### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: (conn=44) Unknown column 'b.created_at' in 'field list'
@@ -1055,8 +1055,8 @@ java.sql.SQLSyntaxErrorException: (conn=44) Unknown column 'b.created_at' in 'fi
 	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy18/jdk.proxy18.$Proxy104.selShoppingList(Unknown Source)
-	at com.green.projectex.shopping.ShoppingService.getShoppingList(ShoppingService.java:16)
-	at com.green.projectex.shopping.ShoppingController.getShoppingList(ShoppingController.java:26)
+	at com.green.projectex.product.ProductService.getShoppingList(ShoppingService.java:16)
+	at com.green.projectex.product.ProductController.getShoppingList(ShoppingController.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1128,7 +1128,7 @@ java.sql.SQLSyntaxErrorException: (conn=44) Unknown column 'b.created_at' in 'fi
 [2023-12-07 15:21:51 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 15:21:51 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 2 ms[0;39m
 [2023-12-07 15:21:51 [32mINFO [0;39m http-nio-8080-exec-8] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 13 ms[0;39m
-[2023-12-07 15:21:54 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 15:21:54 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 15:21:54 [32mINFO [0;39m http-nio-8080-exec-9] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-4 - Starting...[0;39m
 [2023-12-07 15:21:54 [32mINFO [0;39m http-nio-8080-exec-9] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-4 - Added connection org.mariadb.jdbc.Connection@1555b216[0;39m
 [2023-12-07 15:21:54 [32mINFO [0;39m http-nio-8080-exec-9] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-4 - Start completed.[0;39m
@@ -1171,8 +1171,8 @@ java.sql.SQLDataException: value '생필품' cannot be decoded as Integer
 	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy19/jdk.proxy19.$Proxy105.selShoppingList(Unknown Source)
-	at com.green.projectex.shopping.ShoppingService.getShoppingList(ShoppingService.java:16)
-	at com.green.projectex.shopping.ShoppingController.getShoppingList(ShoppingController.java:26)
+	at com.green.projectex.product.ProductService.getShoppingList(ShoppingService.java:16)
+	at com.green.projectex.product.ProductController.getShoppingList(ShoppingController.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1296,7 +1296,7 @@ java.sql.SQLDataException: value '생필품' cannot be decoded as Integer
 [2023-12-07 15:23:00 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 15:23:00 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 15:23:00 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
-[2023-12-07 15:23:00 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1, array=createdAt)[0;39m
+[2023-12-07 15:23:00 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1, array=createdAt)[0;39m
 [2023-12-07 15:23:00 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-5 - Starting...[0;39m
 [2023-12-07 15:23:00 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-5 - Added connection org.mariadb.jdbc.Connection@52c826ef[0;39m
 [2023-12-07 15:23:00 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-5 - Start completed.[0;39m
@@ -1339,8 +1339,8 @@ java.sql.SQLDataException: value '생필품' cannot be decoded as Integer
 	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy23/jdk.proxy23.$Proxy109.selShoppingList(Unknown Source)
-	at com.green.projectex.shopping.ShoppingService.getShoppingList(ShoppingService.java:16)
-	at com.green.projectex.shopping.ShoppingController.getShoppingList(ShoppingController.java:26)
+	at com.green.projectex.product.ProductService.getShoppingList(ShoppingService.java:16)
+	at com.green.projectex.product.ProductController.getShoppingList(ShoppingController.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1431,9 +1431,9 @@ java.sql.SQLDataException: value '생필품' cannot be decoded as Integer
 [2023-12-07 15:23:17 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 15:23:17 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 15:23:17 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 0 ms[0;39m
-[2023-12-07 15:23:17 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 15:23:17 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 15:23:17 [31mERROR[0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/].[dispatcherServlet]] [36mServlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.mybatis.spring.MyBatisSystemException] with root cause[0;39m
-org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'array' in 'class com.green.projectex.shopping.model.ShoppingListDto'
+org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'array' in 'class com.green.projectex.product.model.ProductListDto'
 	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:385)
 	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:160)
 	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:153)
@@ -1457,8 +1457,8 @@ org.apache.ibatis.reflection.ReflectionException: There is no getter for propert
 	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy25/jdk.proxy25.$Proxy111.selShoppingList(Unknown Source)
-	at com.green.projectex.shopping.ShoppingService.getShoppingList(ShoppingService.java:16)
-	at com.green.projectex.shopping.ShoppingController.getShoppingList(ShoppingController.java:26)
+	at com.green.projectex.product.ProductService.getShoppingList(ShoppingService.java:16)
+	at com.green.projectex.product.ProductController.getShoppingList(ShoppingController.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1528,7 +1528,7 @@ org.apache.ibatis.reflection.ReflectionException: There is no getter for propert
 [2023-12-07 15:25:30 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 15:25:30 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
 [2023-12-07 15:25:30 [32mINFO [0;39m http-nio-8080-exec-5] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 12 ms[0;39m
-[2023-12-07 15:25:33 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 15:25:33 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 15:25:33 [32mINFO [0;39m http-nio-8080-exec-2] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-6 - Starting...[0;39m
 [2023-12-07 15:25:33 [32mINFO [0;39m http-nio-8080-exec-2] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-6 - Added connection org.mariadb.jdbc.Connection@509329fb[0;39m
 [2023-12-07 15:25:33 [32mINFO [0;39m http-nio-8080-exec-2] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-6 - Start completed.[0;39m
@@ -1571,8 +1571,8 @@ java.sql.SQLDataException: value '생필품' cannot be decoded as Integer
 	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy26/jdk.proxy26.$Proxy112.selShoppingList(Unknown Source)
-	at com.green.projectex.shopping.ShoppingService.getShoppingList(ShoppingService.java:16)
-	at com.green.projectex.shopping.ShoppingController.getShoppingList(ShoppingController.java:26)
+	at com.green.projectex.product.ProductService.getShoppingList(ShoppingService.java:16)
+	at com.green.projectex.product.ProductController.getShoppingList(ShoppingController.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1623,7 +1623,7 @@ java.sql.SQLDataException: value '생필품' cannot be decoded as Integer
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-[2023-12-07 15:25:37 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 15:25:37 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 15:25:37 [31mERROR[0;39m http-nio-8080-exec-6] [org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/].[dispatcherServlet]] [36mServlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: Error attempting to get column 'categoryList' from result set.  Cause: java.sql.SQLDataException: value '생필품' cannot be decoded as Integer
 ; value '생필품' cannot be decoded as Integer] with root cause[0;39m
 java.sql.SQLDataException: value '생필품' cannot be decoded as Integer
@@ -1663,8 +1663,8 @@ java.sql.SQLDataException: value '생필품' cannot be decoded as Integer
 	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy26/jdk.proxy26.$Proxy112.selShoppingList(Unknown Source)
-	at com.green.projectex.shopping.ShoppingService.getShoppingList(ShoppingService.java:16)
-	at com.green.projectex.shopping.ShoppingController.getShoppingList(ShoppingController.java:26)
+	at com.green.projectex.product.ProductService.getShoppingList(ShoppingService.java:16)
+	at com.green.projectex.product.ProductController.getShoppingList(ShoppingController.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1735,21 +1735,21 @@ java.sql.SQLDataException: value '생필품' cannot be decoded as Integer
 [2023-12-07 15:26:29 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 15:26:29 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 15:26:29 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
-[2023-12-07 15:26:29 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 15:26:29 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 15:26:29 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-7 - Starting...[0;39m
 [2023-12-07 15:26:29 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-7 - Added connection org.mariadb.jdbc.Connection@21d6daf2[0;39m
 [2023-12-07 15:26:29 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-7 - Start completed.[0;39m
-[2023-12-07 15:35:35 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 15:52:17 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 15:52:18 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 15:52:18 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 15:52:18 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 15:52:18 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 15:52:18 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 16:00:20 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 16:00:21 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 16:00:21 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 16:21:45 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 15:35:35 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 15:52:17 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 15:52:18 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 15:52:18 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 15:52:18 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 15:52:18 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 15:52:18 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 16:00:20 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 16:00:21 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 16:00:21 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 16:21:45 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 16:47:41 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 2 class path changes (0 additions, 1 deletion, 1 modification)[0;39m
 [2023-12-07 16:47:41 [32mINFO [0;39m Thread-120] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
 [2023-12-07 16:47:41 [32mINFO [0;39m Thread-120] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-7 - Shutdown initiated...[0;39m
@@ -1770,11 +1770,11 @@ java.sql.SQLDataException: value '생필품' cannot be decoded as Integer
 [2023-12-07 16:47:41 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 16:47:41 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 16:47:41 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
-[2023-12-07 16:47:41 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 16:47:41 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 16:47:41 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-8 - Starting...[0;39m
 [2023-12-07 16:47:41 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-8 - Added connection org.mariadb.jdbc.Connection@7e20610f[0;39m
 [2023-12-07 16:47:41 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-8 - Start completed.[0;39m
-[2023-12-07 16:47:42 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 16:47:42 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 16:47:42 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)[0;39m
 [2023-12-07 16:47:42 [32mINFO [0;39m Thread-124] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
 [2023-12-07 16:47:42 [32mINFO [0;39m Thread-124] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-8 - Shutdown initiated...[0;39m
@@ -1795,12 +1795,12 @@ java.sql.SQLDataException: value '생필품' cannot be decoded as Integer
 [2023-12-07 16:47:50 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 16:47:50 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 16:47:50 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
-[2023-12-07 16:47:50 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 16:47:50 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 16:47:50 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-9 - Starting...[0;39m
 [2023-12-07 16:47:50 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-9 - Added connection org.mariadb.jdbc.Connection@653839ee[0;39m
 [2023-12-07 16:47:50 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-9 - Start completed.[0;39m
-[2023-12-07 16:47:50 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 16:47:50 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 16:47:50 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 16:47:50 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 16:47:51 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 0 deletions, 1 modification)[0;39m
 [2023-12-07 16:47:51 [32mINFO [0;39m Thread-128] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
 [2023-12-07 16:47:51 [32mINFO [0;39m Thread-128] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-9 - Shutdown initiated...[0;39m
@@ -1821,13 +1821,13 @@ java.sql.SQLDataException: value '생필품' cannot be decoded as Integer
 [2023-12-07 16:47:51 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 16:47:51 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 16:47:51 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 3 ms[0;39m
-[2023-12-07 16:47:51 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 16:47:51 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 16:47:51 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-10 - Starting...[0;39m
 [2023-12-07 16:47:51 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-10 - Added connection org.mariadb.jdbc.Connection@285c6871[0;39m
 [2023-12-07 16:47:51 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-10 - Start completed.[0;39m
-[2023-12-07 16:47:51 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 16:47:52 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 16:48:39 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 16:47:51 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 16:47:52 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 16:48:39 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 17:23:48 [32mINFO [0;39m http-nio-8080-exec-1] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 18 ms[0;39m
 [2023-12-07 17:23:50 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 0 deletions, 1 modification)[0;39m
 [2023-12-07 17:23:50 [32mINFO [0;39m Thread-132] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
@@ -1869,7 +1869,7 @@ java.sql.SQLDataException: value '생필품' cannot be decoded as Integer
 [2023-12-07 17:28:15 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 17:28:15 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
 [2023-12-07 17:28:15 [32mINFO [0;39m http-nio-8080-exec-5] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 15 ms[0;39m
-[2023-12-07 17:28:45 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:28:45 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 17:28:45 [32mINFO [0;39m http-nio-8080-exec-9] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-11 - Starting...[0;39m
 [2023-12-07 17:28:45 [32mINFO [0;39m http-nio-8080-exec-9] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-11 - Added connection org.mariadb.jdbc.Connection@48eb465[0;39m
 [2023-12-07 17:28:45 [32mINFO [0;39m http-nio-8080-exec-9] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-11 - Start completed.[0;39m
@@ -1894,7 +1894,7 @@ java.sql.SQLDataException: value '생필품' cannot be decoded as Integer
 [2023-12-07 17:30:59 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 17:30:59 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 2 ms[0;39m
 [2023-12-07 17:30:59 [32mINFO [0;39m http-nio-8080-exec-4] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 23 ms[0;39m
-[2023-12-07 17:32:22 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:32:22 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 17:32:22 [32mINFO [0;39m http-nio-8080-exec-6] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-12 - Starting...[0;39m
 [2023-12-07 17:32:22 [32mINFO [0;39m http-nio-8080-exec-6] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-12 - Added connection org.mariadb.jdbc.Connection@277134cf[0;39m
 [2023-12-07 17:32:22 [32mINFO [0;39m http-nio-8080-exec-6] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-12 - Start completed.[0;39m
@@ -1918,50 +1918,50 @@ java.sql.SQLDataException: value '생필품' cannot be decoded as Integer
 [2023-12-07 17:49:33 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 17:49:33 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 17:49:33 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
-[2023-12-07 17:49:33 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:49:33 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 17:49:33 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-13 - Starting...[0;39m
 [2023-12-07 17:49:33 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-13 - Added connection org.mariadb.jdbc.Connection@1b40ab9e[0;39m
 [2023-12-07 17:49:33 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-13 - Start completed.[0;39m
-[2023-12-07 17:49:34 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:49:34 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:49:34 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:49:34 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:49:35 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:49:35 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:49:35 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:49:35 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:49:35 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:49:35 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:49:35 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:49:36 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:49:36 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:49:36 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:49:34 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:49:34 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:49:34 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:49:34 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:49:35 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:49:35 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:49:35 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:49:35 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:49:35 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:49:35 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:49:35 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:49:36 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:49:36 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:49:36 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 17:49:36 [32mINFO [0;39m http-nio-8080-exec-9] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 19 ms[0;39m
-[2023-12-07 17:49:40 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:50:44 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:50:45 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:50:46 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:50:46 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:50:47 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:50:47 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:50:48 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:50:49 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:50:49 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:50:50 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:50:50 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:50:51 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:50:51 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:50:52 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:50:53 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:51:10 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:51:11 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:51:11 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:51:11 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:51:12 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:51:12 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:51:13 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:51:13 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:51:14 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:49:40 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:50:44 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:50:45 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:50:46 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:50:46 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:50:47 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:50:47 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:50:48 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:50:49 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:50:49 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:50:50 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:50:50 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:50:51 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:50:51 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:50:52 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:50:53 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:51:10 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:51:11 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:51:11 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:51:11 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:51:12 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:51:12 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:51:13 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:51:13 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:51:14 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 17:52:55 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 0 deletions, 1 modification)[0;39m
 [2023-12-07 17:52:55 [32mINFO [0;39m Thread-148] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
 [2023-12-07 17:52:55 [32mINFO [0;39m Thread-148] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-13 - Shutdown initiated...[0;39m
@@ -2145,15 +2145,15 @@ Caused by: org.xml.sax.SAXParseException: XML 문서 구조는 동일한 엔티�
 [2023-12-07 17:55:22 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 17:55:22 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
 [2023-12-07 17:55:22 [32mINFO [0;39m http-nio-8080-exec-4] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 19 ms[0;39m
-[2023-12-07 17:55:24 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:55:24 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 17:55:24 [32mINFO [0;39m http-nio-8080-exec-3] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-14 - Starting...[0;39m
 [2023-12-07 17:55:24 [32mINFO [0;39m http-nio-8080-exec-3] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-14 - Added connection org.mariadb.jdbc.Connection@4c2f542f[0;39m
 [2023-12-07 17:55:24 [32mINFO [0;39m http-nio-8080-exec-3] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-14 - Start completed.[0;39m
-[2023-12-07 17:55:29 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:55:30 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:55:31 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:55:32 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:56:11 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:55:29 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:55:30 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:55:31 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:55:32 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:56:11 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 17:56:11 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 0 deletions, 1 modification)[0;39m
 [2023-12-07 17:56:11 [32mINFO [0;39m Thread-156] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
 [2023-12-07 17:56:11 [32mINFO [0;39m Thread-156] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-14 - Shutdown initiated...[0;39m
@@ -2174,17 +2174,17 @@ Caused by: org.xml.sax.SAXParseException: XML 문서 구조는 동일한 엔티�
 [2023-12-07 17:56:12 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 17:56:12 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 17:56:12 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 0 ms[0;39m
-[2023-12-07 17:56:12 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:56:12 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 17:56:12 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-15 - Starting...[0;39m
 [2023-12-07 17:56:12 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-15 - Added connection org.mariadb.jdbc.Connection@262e8b2f[0;39m
 [2023-12-07 17:56:12 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-15 - Start completed.[0;39m
-[2023-12-07 17:56:13 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:56:14 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:56:14 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:56:15 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:56:16 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:56:16 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:56:39 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:56:13 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:56:14 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:56:14 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:56:15 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:56:16 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:56:16 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:56:39 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 17:56:39 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 0 deletions, 1 modification)[0;39m
 [2023-12-07 17:56:39 [32mINFO [0;39m Thread-163] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
 [2023-12-07 17:56:39 [32mINFO [0;39m Thread-163] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-15 - Shutdown initiated...[0;39m
@@ -2205,12 +2205,12 @@ Caused by: org.xml.sax.SAXParseException: XML 문서 구조는 동일한 엔티�
 [2023-12-07 17:56:40 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 17:56:40 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 17:56:40 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 0 ms[0;39m
-[2023-12-07 17:56:40 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:56:40 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 17:56:40 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-16 - Starting...[0;39m
 [2023-12-07 17:56:40 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-16 - Added connection org.mariadb.jdbc.Connection@1cb6a149[0;39m
 [2023-12-07 17:56:40 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-16 - Start completed.[0;39m
-[2023-12-07 17:56:40 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 17:56:41 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:56:40 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 17:56:41 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 17:57:24 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 0 deletions, 1 modification)[0;39m
 [2023-12-07 17:57:24 [32mINFO [0;39m Thread-167] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
 [2023-12-07 17:57:24 [32mINFO [0;39m Thread-167] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-16 - Shutdown initiated...[0;39m
@@ -2231,7 +2231,7 @@ Caused by: org.xml.sax.SAXParseException: XML 문서 구조는 동일한 엔티�
 [2023-12-07 18:21:10 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 18:21:10 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 18:21:10 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 0 ms[0;39m
-[2023-12-07 18:21:10 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 18:21:10 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 18:21:10 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-17 - Starting...[0;39m
 [2023-12-07 18:21:10 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-17 - Added connection org.mariadb.jdbc.Connection@596655d4[0;39m
 [2023-12-07 18:21:10 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-17 - Start completed.[0;39m
@@ -2397,13 +2397,13 @@ Caused by: org.xml.sax.SAXParseException: 요소 콘텐츠는 올바른 형식�
 [2023-12-07 18:22:12 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-5].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 18:22:12 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 18:22:12 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 0 ms[0;39m
-[2023-12-07 18:22:12 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 18:22:12 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 18:22:12 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-18 - Starting...[0;39m
 [2023-12-07 18:22:12 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-18 - Added connection org.mariadb.jdbc.Connection@71e8004f[0;39m
 [2023-12-07 18:22:12 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-18 - Start completed.[0;39m
-[2023-12-07 18:22:13 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 18:22:13 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
-[2023-12-07 18:23:38 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 18:22:13 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 18:22:13 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 18:23:38 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 18:24:46 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 0 deletions, 1 modification)[0;39m
 [2023-12-07 18:24:46 [32mINFO [0;39m Thread-175] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
 [2023-12-07 18:24:46 [32mINFO [0;39m Thread-175] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-18 - Shutdown initiated...[0;39m
@@ -2631,7 +2631,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.green.projectex.shopping.ShoppingController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@66c9ca98]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.green.projectex.product.ProductController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@66c9ca98]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
 	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:460)
@@ -2642,7 +2642,7 @@ Caused by: java.lang.NoClassDefFoundError: com/green/projectex/shopping/model/Pr
 	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
 	... 26 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.ProductInsDto
+Caused by: java.lang.ClassNotFoundException: com.green.projectex.product.model.ProductInsDto
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
@@ -2985,7 +2985,7 @@ Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.
 [2023-12-07 18:51:52 [32mINFO [0;39m http-nio-8080-exec-3] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection org.mariadb.jdbc.Connection@5c1d8fdd[0;39m
 [2023-12-07 18:51:52 [32mINFO [0;39m http-nio-8080-exec-3] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
 [2023-12-07 18:51:52 [31mERROR[0;39m http-nio-8080-exec-3] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]] [36mServlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.mybatis.spring.MyBatisSystemException] with root cause[0;39m
-org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'product_nm' in 'class com.green.projectex.shopping.model.ProductInsDto'
+org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'product_nm' in 'class com.green.projectex.product.model.ProductInsDto'
 	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:385)
 	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:160)
 	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:153)
@@ -3011,8 +3011,8 @@ org.apache.ibatis.reflection.ReflectionException: There is no getter for propert
 	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy3/jdk.proxy3.$Proxy77.insProduct(Unknown Source)
-	at com.green.projectex.shopping.ShoppingService.postProduct(ShoppingService.java:24)
-	at com.green.projectex.shopping.ShoppingController.postProduct(ShoppingController.java:32)
+	at com.green.projectex.product.ProductService.postProduct(ShoppingService.java:24)
+	at com.green.projectex.product.ProductController.postProduct(ShoppingController.java:32)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -3064,7 +3064,7 @@ org.apache.ibatis.reflection.ReflectionException: There is no getter for propert
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 [2023-12-07 18:52:24 [31mERROR[0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]] [36mServlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.mybatis.spring.MyBatisSystemException] with root cause[0;39m
-org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'product_nm' in 'class com.green.projectex.shopping.model.ProductInsDto'
+org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'product_nm' in 'class com.green.projectex.product.model.ProductInsDto'
 	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:385)
 	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:160)
 	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:153)
@@ -3090,8 +3090,8 @@ org.apache.ibatis.reflection.ReflectionException: There is no getter for propert
 	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy3/jdk.proxy3.$Proxy77.insProduct(Unknown Source)
-	at com.green.projectex.shopping.ShoppingService.postProduct(ShoppingService.java:24)
-	at com.green.projectex.shopping.ShoppingController.postProduct(ShoppingController.java:32)
+	at com.green.projectex.product.ProductService.postProduct(ShoppingService.java:24)
+	at com.green.projectex.product.ProductController.postProduct(ShoppingController.java:32)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -3177,12 +3177,12 @@ org.apache.ibatis.reflection.ReflectionException: There is no getter for propert
 [2023-12-07 18:52:34 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 18:52:34 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 18:52:34 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
-[2023-12-07 18:52:34 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductInsDto(iCategory=1, iuser=1, productNm=쫀디기, memo=, deadLine=, productCount=1)[0;39m
+[2023-12-07 18:52:34 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ProductInsDto(iCategory=1, iuser=1, productNm=쫀디기, memo=, deadLine=, productCount=1)[0;39m
 [2023-12-07 18:52:34 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Starting...[0;39m
 [2023-12-07 18:52:34 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-2 - Added connection org.mariadb.jdbc.Connection@6268082b[0;39m
 [2023-12-07 18:52:34 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Start completed.[0;39m
 [2023-12-07 18:52:34 [31mERROR[0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]] [36mServlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.mybatis.spring.MyBatisSystemException] with root cause[0;39m
-org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'product_nm' in 'class com.green.projectex.shopping.model.ProductInsDto'
+org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'product_nm' in 'class com.green.projectex.product.model.ProductInsDto'
 	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:385)
 	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:160)
 	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:153)
@@ -3208,8 +3208,8 @@ org.apache.ibatis.reflection.ReflectionException: There is no getter for propert
 	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
 	at jdk.proxy6/jdk.proxy6.$Proxy94.insProduct(Unknown Source)
-	at com.green.projectex.shopping.ShoppingService.postProduct(ShoppingService.java:24)
-	at com.green.projectex.shopping.ShoppingController.postProduct(ShoppingController.java:33)
+	at com.green.projectex.product.ProductService.postProduct(ShoppingService.java:24)
+	at com.green.projectex.product.ProductController.postProduct(ShoppingController.java:33)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -3295,11 +3295,11 @@ org.apache.ibatis.reflection.ReflectionException: There is no getter for propert
 [2023-12-07 18:53:07 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 18:53:07 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 0 ms[0;39m
 [2023-12-07 18:53:08 [32mINFO [0;39m http-nio-8080-exec-7] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 134 ms[0;39m
-[2023-12-07 18:53:12 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductInsDto(iCategory=1, iuser=1, productNm=쫀디기, memo=, deadLine=, productCount=1)[0;39m
+[2023-12-07 18:53:12 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.projectex.product.ProductController] [36mdto: ProductInsDto(iCategory=1, iuser=1, productNm=쫀디기, memo=, deadLine=, productCount=1)[0;39m
 [2023-12-07 18:53:12 [32mINFO [0;39m http-nio-8080-exec-9] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
 [2023-12-07 18:53:12 [32mINFO [0;39m http-nio-8080-exec-9] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection org.mariadb.jdbc.Connection@5119dfc8[0;39m
 [2023-12-07 18:53:12 [32mINFO [0;39m http-nio-8080-exec-9] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
-[2023-12-07 18:55:27 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 18:55:27 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 19:10:55 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)[0;39m
 [2023-12-07 19:10:55 [32mINFO [0;39m Thread-5] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
 [2023-12-07 19:10:55 [32mINFO [0;39m Thread-5] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown initiated...[0;39m
@@ -3421,12 +3421,12 @@ Caused by: java.io.IOException: Failed to parse mapping resource: 'file [D:\2023
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
 	... 63 common frames omitted
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\2023-second\java\projectex\target\classes\mappers\UserMapper.xml]'. Cause: java.lang.TypeNotPresentException: Type com.green.projectex.shopping.model.ShoppingListVo not present
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\2023-second\java\projectex\target\classes\mappers\UserMapper.xml]'. Cause: java.lang.TypeNotPresentException: Type com.green.projectex.product.model.ProductListVo not present
 	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:127)
 	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:100)
 	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:698)
 	... 71 common frames omitted
-Caused by: java.lang.TypeNotPresentException: Type com.green.projectex.shopping.model.ShoppingListVo not present
+Caused by: java.lang.TypeNotPresentException: Type com.green.projectex.product.model.ProductListVo not present
 	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
 	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
 	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
@@ -3444,7 +3444,7 @@ Caused by: java.lang.TypeNotPresentException: Type com.green.projectex.shopping.
 	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:135)
 	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:125)
 	... 73 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.ShoppingListVo
+Caused by: java.lang.ClassNotFoundException: com.green.projectex.product.model.ProductListVo
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
@@ -3594,7 +3594,7 @@ Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.
 [2023-12-07 19:24:02 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:24:02 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:24:02 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
-[2023-12-07 19:24:02 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ShoppingListDto(iuser=1)[0;39m
+[2023-12-07 19:24:02 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ShoppingListDto(iuser=1)[0;39m
 [2023-12-07 19:24:02 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Starting...[0;39m
 [2023-12-07 19:24:02 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-2 - Added connection org.mariadb.jdbc.Connection@168793a7[0;39m
 [2023-12-07 19:24:02 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Start completed.[0;39m
@@ -3618,7 +3618,7 @@ Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.
 [2023-12-07 19:26:06 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:26:06 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:26:06 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 0 ms[0;39m
-[2023-12-07 19:26:06 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(iProductList=0, buyingCheck=1)[0;39m
+[2023-12-07 19:26:06 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(iProductList=0, buyingCheck=1)[0;39m
 [2023-12-07 19:26:06 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-3 - Starting...[0;39m
 [2023-12-07 19:26:06 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-3 - Added connection org.mariadb.jdbc.Connection@55968ef6[0;39m
 [2023-12-07 19:26:06 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-3 - Start completed.[0;39m
@@ -3641,7 +3641,7 @@ Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.
 [2023-12-07 19:26:56 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:26:56 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:26:56 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
-[2023-12-07 19:26:56 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(iProductList=0, buyingCheck=1)[0;39m
+[2023-12-07 19:26:56 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(iProductList=0, buyingCheck=1)[0;39m
 [2023-12-07 19:26:56 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
 [2023-12-07 19:26:56 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection org.mariadb.jdbc.Connection@7912b576[0;39m
 [2023-12-07 19:26:56 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
@@ -3665,11 +3665,11 @@ Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.
 [2023-12-07 19:27:02 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:27:02 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:27:02 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 0 ms[0;39m
-[2023-12-07 19:27:02 [33mWARN [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] [36mResolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.green.projectex.common.ResVo com.green.projectex.shopping.ShoppingController.patchProductCheck(com.green.projectex.shopping.model.ProductPatchDto)][0;39m
-[2023-12-07 19:27:03 [33mWARN [0;39m http-nio-8080-exec-2] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] [36mResolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.green.projectex.common.ResVo com.green.projectex.shopping.ShoppingController.patchProductCheck(com.green.projectex.shopping.model.ProductPatchDto)][0;39m
-[2023-12-07 19:27:03 [33mWARN [0;39m http-nio-8080-exec-3] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] [36mResolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.green.projectex.common.ResVo com.green.projectex.shopping.ShoppingController.patchProductCheck(com.green.projectex.shopping.model.ProductPatchDto)][0;39m
-[2023-12-07 19:27:17 [33mWARN [0;39m http-nio-8080-exec-8] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] [36mResolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.green.projectex.common.ResVo com.green.projectex.shopping.ShoppingController.patchProductCheck(com.green.projectex.shopping.model.ProductPatchDto)][0;39m
-[2023-12-07 19:27:18 [33mWARN [0;39m http-nio-8080-exec-5] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] [36mResolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.green.projectex.common.ResVo com.green.projectex.shopping.ShoppingController.patchProductCheck(com.green.projectex.shopping.model.ProductPatchDto)][0;39m
+[2023-12-07 19:27:02 [33mWARN [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] [36mResolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.green.projectex.common.ResVo com.green.projectex.product.ProductController.patchProductCheck(com.green.projectex.product.model.ProductPatchDto)][0;39m
+[2023-12-07 19:27:03 [33mWARN [0;39m http-nio-8080-exec-2] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] [36mResolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.green.projectex.common.ResVo com.green.projectex.product.ProductController.patchProductCheck(com.green.projectex.product.model.ProductPatchDto)][0;39m
+[2023-12-07 19:27:03 [33mWARN [0;39m http-nio-8080-exec-3] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] [36mResolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.green.projectex.common.ResVo com.green.projectex.product.ProductController.patchProductCheck(com.green.projectex.product.model.ProductPatchDto)][0;39m
+[2023-12-07 19:27:17 [33mWARN [0;39m http-nio-8080-exec-8] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] [36mResolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.green.projectex.common.ResVo com.green.projectex.product.ProductController.patchProductCheck(com.green.projectex.product.model.ProductPatchDto)][0;39m
+[2023-12-07 19:27:18 [33mWARN [0;39m http-nio-8080-exec-5] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] [36mResolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.green.projectex.common.ResVo com.green.projectex.product.ProductController.patchProductCheck(com.green.projectex.product.model.ProductPatchDto)][0;39m
 [2023-12-07 19:27:18 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 0 deletions, 1 modification)[0;39m
 [2023-12-07 19:27:18 [32mINFO [0;39m Thread-7] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
 [2023-12-07 19:27:18 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarting ProjectexApplication using Java 17.0.8.1 with PID 3724 (D:\2023-second\java\projectex\target\classes started by Administrator in D:\2023-second\java\projectex)[0;39m
@@ -3688,12 +3688,12 @@ Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.
 [2023-12-07 19:27:18 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:27:18 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:27:18 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 0 ms[0;39m
-[2023-12-07 19:27:18 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(iProductList=0, buyingCheck=1)[0;39m
+[2023-12-07 19:27:18 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(iProductList=0, buyingCheck=1)[0;39m
 [2023-12-07 19:27:18 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Starting...[0;39m
 [2023-12-07 19:27:18 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-2 - Added connection org.mariadb.jdbc.Connection@1c2f664e[0;39m
 [2023-12-07 19:27:18 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Start completed.[0;39m
 [2023-12-07 19:27:48 [32mINFO [0;39m http-nio-8080-exec-5] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 116 ms[0;39m
-[2023-12-07 19:27:56 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(iProductList=2, buyingCheck=1)[0;39m
+[2023-12-07 19:27:56 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(iProductList=2, buyingCheck=1)[0;39m
 [2023-12-07 19:28:29 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)[0;39m
 [2023-12-07 19:28:29 [32mINFO [0;39m Thread-11] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
 [2023-12-07 19:28:29 [32mINFO [0;39m Thread-11] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Shutdown initiated...[0;39m
@@ -3734,7 +3734,7 @@ Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.
 [2023-12-07 19:28:31 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:28:31 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
 [2023-12-07 19:28:31 [32mINFO [0;39m http-nio-8080-exec-4] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 27 ms[0;39m
-[2023-12-07 19:28:34 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=0)[0;39m
+[2023-12-07 19:28:34 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=0)[0;39m
 [2023-12-07 19:28:34 [32mINFO [0;39m http-nio-8080-exec-9] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-3 - Starting...[0;39m
 [2023-12-07 19:28:34 [32mINFO [0;39m http-nio-8080-exec-9] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-3 - Added connection org.mariadb.jdbc.Connection@45dc3e8f[0;39m
 [2023-12-07 19:28:34 [32mINFO [0;39m http-nio-8080-exec-9] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-3 - Start completed.[0;39m
@@ -3773,7 +3773,7 @@ Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.
 [2023-12-07 19:28:55 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:28:55 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:28:55 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
-[2023-12-07 19:28:55 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=3)[0;39m
+[2023-12-07 19:28:55 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=3)[0;39m
 [2023-12-07 19:28:55 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-4 - Starting...[0;39m
 [2023-12-07 19:28:55 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-4 - Added connection org.mariadb.jdbc.Connection@641f0a53[0;39m
 [2023-12-07 19:28:55 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-4 - Start completed.[0;39m
@@ -3812,11 +3812,11 @@ Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.
 [2023-12-07 19:29:46 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:29:46 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:29:46 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 0 ms[0;39m
-[2023-12-07 19:29:46 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=4)[0;39m
+[2023-12-07 19:29:46 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=4)[0;39m
 [2023-12-07 19:29:46 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-5 - Starting...[0;39m
 [2023-12-07 19:29:46 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-5 - Added connection org.mariadb.jdbc.Connection@67707e0a[0;39m
 [2023-12-07 19:29:46 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-5 - Start completed.[0;39m
-[2023-12-07 19:30:03 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=5)[0;39m
+[2023-12-07 19:30:03 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=5)[0;39m
 [2023-12-07 19:30:46 [32mINFO [0;39m http-nio-8080-exec-8] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 27 ms[0;39m
 [2023-12-07 19:30:47 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)[0;39m
 [2023-12-07 19:30:47 [32mINFO [0;39m Thread-35] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
@@ -3900,7 +3900,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.green.projectex.shopping.ShoppingController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2625ec61]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.green.projectex.product.ProductController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2625ec61]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
 	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:460)
@@ -3911,7 +3911,7 @@ Caused by: java.lang.NoClassDefFoundError: com/green/projectex/shopping/model/Pr
 	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
 	... 26 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.ProductPatchDto
+Caused by: java.lang.ClassNotFoundException: com.green.projectex.product.model.ProductPatchDto
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
@@ -3954,12 +3954,12 @@ Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.
 [2023-12-07 19:34:01 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:34:01 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:34:01 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 2 ms[0;39m
-[2023-12-07 19:34:01 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=0)[0;39m
+[2023-12-07 19:34:01 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=0)[0;39m
 [2023-12-07 19:34:01 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
 [2023-12-07 19:34:01 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection org.mariadb.jdbc.Connection@50e4c2c5[0;39m
 [2023-12-07 19:34:01 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
-[2023-12-07 19:34:03 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=0)[0;39m
-[2023-12-07 19:34:03 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=0)[0;39m
+[2023-12-07 19:34:03 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=0)[0;39m
+[2023-12-07 19:34:03 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=0)[0;39m
 [2023-12-07 19:35:40 [32mINFO [0;39m http-nio-8080-exec-8] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 133 ms[0;39m
 [2023-12-07 19:35:41 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)[0;39m
 [2023-12-07 19:35:41 [32mINFO [0;39m Thread-5] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
@@ -4000,7 +4000,7 @@ Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.
 [2023-12-07 19:35:46 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:35:46 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:35:46 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
-[2023-12-07 19:35:46 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=0)[0;39m
+[2023-12-07 19:35:46 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=0)[0;39m
 [2023-12-07 19:35:46 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Starting...[0;39m
 [2023-12-07 19:35:46 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-2 - Added connection org.mariadb.jdbc.Connection@629530a3[0;39m
 [2023-12-07 19:35:46 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Start completed.[0;39m
@@ -4043,11 +4043,11 @@ Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.
 [2023-12-07 19:38:46 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:38:46 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:38:46 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
-[2023-12-07 19:38:46 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=0)[0;39m
+[2023-12-07 19:38:46 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=0)[0;39m
 [2023-12-07 19:38:46 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-3 - Starting...[0;39m
 [2023-12-07 19:38:46 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-3 - Added connection org.mariadb.jdbc.Connection@1d6e0409[0;39m
 [2023-12-07 19:38:46 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-3 - Start completed.[0;39m
-[2023-12-07 19:39:09 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=6)[0;39m
+[2023-12-07 19:39:09 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=6)[0;39m
 [2023-12-07 19:42:48 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)[0;39m
 [2023-12-07 19:42:48 [32mINFO [0;39m Thread-19] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
 [2023-12-07 19:42:48 [32mINFO [0;39m Thread-19] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-3 - Shutdown initiated...[0;39m
@@ -4122,7 +4122,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.green.projectex.shopping.ShoppingController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@515b9ac]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.green.projectex.product.ProductController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@515b9ac]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
 	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:460)
@@ -4133,7 +4133,7 @@ Caused by: java.lang.NoClassDefFoundError: com/green/projectex/shopping/model/Pr
 	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
 	... 26 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.ProductPatchDto
+Caused by: java.lang.ClassNotFoundException: com.green.projectex.product.model.ProductPatchDto
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
@@ -4159,7 +4159,7 @@ Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.
 [2023-12-07 19:43:28 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:43:28 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
 [2023-12-07 19:43:28 [32mINFO [0;39m http-nio-8080-exec-6] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 27 ms[0;39m
-[2023-12-07 19:43:37 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=0)[0;39m
+[2023-12-07 19:43:37 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=0)[0;39m
 [2023-12-07 19:43:37 [32mINFO [0;39m http-nio-8080-exec-6] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-4 - Starting...[0;39m
 [2023-12-07 19:43:37 [32mINFO [0;39m http-nio-8080-exec-6] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-4 - Added connection org.mariadb.jdbc.Connection@409b0a0a[0;39m
 [2023-12-07 19:43:37 [32mINFO [0;39m http-nio-8080-exec-6] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-4 - Start completed.[0;39m
@@ -4184,7 +4184,7 @@ Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.
 [2023-12-07 19:44:32 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:44:32 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
 [2023-12-07 19:44:32 [32mINFO [0;39m http-nio-8080-exec-3] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 24 ms[0;39m
-[2023-12-07 19:44:37 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=0)[0;39m
+[2023-12-07 19:44:37 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=0)[0;39m
 [2023-12-07 19:44:37 [32mINFO [0;39m http-nio-8080-exec-4] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-5 - Starting...[0;39m
 [2023-12-07 19:44:37 [32mINFO [0;39m http-nio-8080-exec-4] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-5 - Added connection org.mariadb.jdbc.Connection@57d9fbfe[0;39m
 [2023-12-07 19:44:37 [32mINFO [0;39m http-nio-8080-exec-4] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-5 - Start completed.[0;39m
@@ -4208,17 +4208,17 @@ Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.
 [2023-12-07 19:44:51 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:44:51 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:44:51 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 0 ms[0;39m
-[2023-12-07 19:44:51 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=1)[0;39m
+[2023-12-07 19:44:51 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=1)[0;39m
 [2023-12-07 19:44:51 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-6 - Starting...[0;39m
 [2023-12-07 19:44:51 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-6 - Added connection org.mariadb.jdbc.Connection@27c632b[0;39m
 [2023-12-07 19:44:51 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-6 - Start completed.[0;39m
-[2023-12-07 19:44:53 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=1)[0;39m
-[2023-12-07 19:44:53 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=1)[0;39m
-[2023-12-07 19:44:53 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=1)[0;39m
-[2023-12-07 19:44:54 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=1)[0;39m
-[2023-12-07 19:44:54 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=1)[0;39m
-[2023-12-07 19:44:54 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=1)[0;39m
-[2023-12-07 19:44:54 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=1)[0;39m
+[2023-12-07 19:44:53 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=1)[0;39m
+[2023-12-07 19:44:53 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=1)[0;39m
+[2023-12-07 19:44:53 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=1)[0;39m
+[2023-12-07 19:44:54 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=1)[0;39m
+[2023-12-07 19:44:54 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=1)[0;39m
+[2023-12-07 19:44:54 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=1)[0;39m
+[2023-12-07 19:44:54 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=1)[0;39m
 [2023-12-07 19:44:54 [32mINFO [0;39m http-nio-8080-exec-3] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 23 ms[0;39m
 [2023-12-07 19:45:00 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-6 - Shutdown initiated...[0;39m
 [2023-12-07 19:45:00 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-6 - Shutdown completed.[0;39m
@@ -4239,7 +4239,7 @@ Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.
 [2023-12-07 19:45:09 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:45:09 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:45:09 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
-[2023-12-07 19:45:09 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=0)[0;39m
+[2023-12-07 19:45:09 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=0)[0;39m
 [2023-12-07 19:45:09 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
 [2023-12-07 19:45:09 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection org.mariadb.jdbc.Connection@7912b576[0;39m
 [2023-12-07 19:45:09 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
@@ -4278,24 +4278,24 @@ Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.
 [2023-12-07 19:45:34 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:45:34 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:45:34 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 0 ms[0;39m
-[2023-12-07 19:45:34 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
+[2023-12-07 19:45:34 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
 [2023-12-07 19:45:34 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Starting...[0;39m
 [2023-12-07 19:45:34 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-2 - Added connection org.mariadb.jdbc.Connection@3a81b40a[0;39m
 [2023-12-07 19:45:34 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Start completed.[0;39m
-[2023-12-07 19:45:35 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
-[2023-12-07 19:45:35 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
-[2023-12-07 19:45:36 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
-[2023-12-07 19:45:36 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
-[2023-12-07 19:45:36 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
-[2023-12-07 19:45:37 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
-[2023-12-07 19:45:37 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
-[2023-12-07 19:45:37 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
-[2023-12-07 19:45:37 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
-[2023-12-07 19:45:37 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
-[2023-12-07 19:45:37 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
-[2023-12-07 19:45:38 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
+[2023-12-07 19:45:35 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
+[2023-12-07 19:45:35 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
+[2023-12-07 19:45:36 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
+[2023-12-07 19:45:36 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
+[2023-12-07 19:45:36 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
+[2023-12-07 19:45:37 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
+[2023-12-07 19:45:37 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
+[2023-12-07 19:45:37 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
+[2023-12-07 19:45:37 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
+[2023-12-07 19:45:37 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
+[2023-12-07 19:45:37 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
+[2023-12-07 19:45:38 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
 [2023-12-07 19:45:38 [32mINFO [0;39m http-nio-8080-exec-7] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 120 ms[0;39m
-[2023-12-07 19:45:45 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
+[2023-12-07 19:45:45 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=1)[0;39m
 [2023-12-07 19:46:18 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 0 deletions, 1 modification)[0;39m
 [2023-12-07 19:46:18 [32mINFO [0;39m Thread-11] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
 [2023-12-07 19:46:18 [32mINFO [0;39m Thread-11] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Shutdown initiated...[0;39m
@@ -4317,11 +4317,11 @@ Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.
 [2023-12-07 19:46:18 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:46:18 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 3 ms[0;39m
 [2023-12-07 19:46:19 [32mINFO [0;39m http-nio-8080-exec-7] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 30 ms[0;39m
-[2023-12-07 19:46:26 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=0)[0;39m
+[2023-12-07 19:46:26 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=0)[0;39m
 [2023-12-07 19:46:26 [32mINFO [0;39m http-nio-8080-exec-10] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-3 - Starting...[0;39m
 [2023-12-07 19:46:26 [32mINFO [0;39m http-nio-8080-exec-10] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-3 - Added connection org.mariadb.jdbc.Connection@5d09ab1c[0;39m
 [2023-12-07 19:46:26 [32mINFO [0;39m http-nio-8080-exec-10] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-3 - Start completed.[0;39m
-[2023-12-07 19:46:30 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=0)[0;39m
+[2023-12-07 19:46:30 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=0)[0;39m
 [2023-12-07 19:46:40 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)[0;39m
 [2023-12-07 19:46:40 [32mINFO [0;39m Thread-15] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
 [2023-12-07 19:46:40 [32mINFO [0;39m Thread-15] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-3 - Shutdown initiated...[0;39m
@@ -4357,7 +4357,7 @@ Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.
 [2023-12-07 19:46:45 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:46:45 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:46:45 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
-[2023-12-07 19:46:45 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=0)[0;39m
+[2023-12-07 19:46:45 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iProductList=0)[0;39m
 [2023-12-07 19:46:45 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-4 - Starting...[0;39m
 [2023-12-07 19:46:45 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-4 - Added connection org.mariadb.jdbc.Connection@356da519[0;39m
 [2023-12-07 19:46:45 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-4 - Start completed.[0;39m
@@ -4396,7 +4396,7 @@ Caused by: java.lang.ClassNotFoundException: com.green.projectex.shopping.model.
 [2023-12-07 19:47:13 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:47:13 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-07 19:47:13 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 2 ms[0;39m
-[2023-12-07 19:47:13 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.shopping.ShoppingController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=2)[0;39m
+[2023-12-07 19:47:13 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.projectex.product.ProductController] [36mdto: ProductPatchDto(buyingCheck=1, iproductList=2)[0;39m
 [2023-12-07 19:47:13 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-5 - Starting...[0;39m
 [2023-12-07 19:47:13 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-5 - Added connection org.mariadb.jdbc.Connection@6fb044b5[0;39m
 [2023-12-07 19:47:13 [32mINFO [0;39m http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-5 - Start completed.[0;39m

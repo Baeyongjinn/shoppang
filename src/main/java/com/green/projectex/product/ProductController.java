@@ -1,10 +1,9 @@
-package com.green.projectex.shopping;
+package com.green.projectex.product;
 
 
 import com.green.projectex.common.ResVo;
-import com.green.projectex.shopping.model.*;
+import com.green.projectex.product.model.*;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -17,12 +16,12 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/product")
 @RequiredArgsConstructor
-public class ShoppingController {
-    private final ShoppingService service;
+public class ProductController {
+    private final ProductService service;
 
     @GetMapping
     @Operation(summary = "구매 목록 조회", description = "구매 목록 조회 처리(isList:0 모두 보기, 1:구매예정 상품 보기 , 2: 구매확정 상품 보기)")
-    public List<ShoppingListVo> getShoppingList(ShoppingListDto dto) {
+    public List<ProductListVo> getShoppingList(ProductListDto dto) {
         log.info("dto: {}",dto);
         return service.getShoppingList(dto);
     }

@@ -1,10 +1,11 @@
-package com.green.projectex.shopping.model;
+package com.green.projectex.product.model;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 @Data
-public class ShoppingListVo {
+@Schema(description = "장바구니 리스트 응답 Vo")
+public class ProductListVo {
     @Schema(title = "상품 PK")
     private int productPk;
     @Schema(title = "카테고리 이름")

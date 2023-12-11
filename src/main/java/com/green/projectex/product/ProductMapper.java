@@ -1,14 +1,14 @@
-package com.green.projectex.shopping;
+package com.green.projectex.product;
 
-import com.green.projectex.shopping.model.*;
+import com.green.projectex.product.model.*;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
 @Mapper
-public interface ShoppingMapper {
+public interface ProductMapper {
 
-    List<ShoppingListVo> selShoppingList(ShoppingListDto dto);
+    List<ProductListVo> selShoppingList(ProductListDto dto);
 
     int insProduct(ProductInsDto dto);
 
