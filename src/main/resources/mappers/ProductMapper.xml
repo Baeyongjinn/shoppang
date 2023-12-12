@@ -36,7 +36,7 @@
     </insert>
 
     <!-- 구매 확정 -->
-    <update id="patchProduct">
+    <update id="patchProduct" useGeneratedKeys="true" keyProperty="productPk">
         UPDATE t_purchase_product
         SET buying_check = 1
         ,buying_date = NOW()
@@ -59,7 +59,7 @@
         WHERE product_pk = #{productPk} AND buying_check = 0
     </update>
 
-    <delete id="delProduct" parameterType="java.util.List">
+    <delete id="delProduct">
         DELETE FROM t_purchase_product
         <where>
             <foreach collection="productPk" item="productPk" separator="OR">
@@ -69,7 +69,7 @@
     </delete>
 
     <!-- 구매 확정 상품 삭제시 2로바꾸기 -->
-    <update id="patchConfirmed" parameterType="java.util.List">
+    <update id="patchConfirmed">
         UPDATE t_purchase_product
         <set>
             buying_check = 2

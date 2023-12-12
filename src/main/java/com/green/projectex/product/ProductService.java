@@ -27,7 +27,7 @@ public class ProductService {
         if(result == 0){
             return new ResVo(Const.FAIL);
         }
-        return new ResVo(Const.SUCCESS);
+        return new ResVo(dto.getProductPk());
     }
 
     public ResVo patchProductCheck(ProductCompleteDto dto){

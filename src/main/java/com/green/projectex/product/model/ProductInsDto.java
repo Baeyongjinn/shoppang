@@ -1,11 +1,14 @@
 package com.green.projectex.product.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 @Data
 @Schema(description = "장바구니 등록 Dto")
 public class ProductInsDto {
+    @JsonIgnore
+    private int productPk;
 
     @Schema(title = "카테고리 pk")
     private int categoryPk;
@@ -15,6 +18,7 @@ public class ProductInsDto {
     private String productNm;
     @Schema(title = "메모")
     private String memo;
+
 //    @Schema(title = "수량")
 //    private int productCount;
 
