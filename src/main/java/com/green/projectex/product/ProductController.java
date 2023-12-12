@@ -45,7 +45,7 @@ public class ProductController {
     }
 
     @PutMapping("/put")
-    @Operation(summary = "구매예정 상품 수정", description = "구매예정 상품 수정 처리")
+    @Operation(summary = "구매 예정 상품 수정", description = "구매 예정 상품 수정 처리")
 
     public ResVo putProduct(@RequestBody ProductPutDto dto){
         log.info("dto: {}",dto);
@@ -53,14 +53,14 @@ public class ProductController {
     }
 
     @DeleteMapping
-    @Operation(summary = "구매 예정 상품 삭제", description = "구매 예정 상품 삭제 처리")
+    @Operation(summary = "구매 예정 상품 삭제", description = "구매 예정 상품 삭제 처리(여러개 한번에 삭제 가능)")
     public ResVo delProduct(ProductDelDto dto){
         log.info("dto: {}", dto);
         return service.delProduct(dto);
     }
 
-    @PatchMapping("/confiremd")
-    @Operation(summary = "구매 확정 상품 삭제", description = "구매 확정 상품 삭제 처리")
+    @PatchMapping("/expunge")
+    @Operation(summary = "구매 확정 상품 삭제", description = "구매 확정 상품 삭제 처리(여러개 한번에 삭제 가능,buying_check 2로 수정)")
     public ResVo patchConfirmed(ProductPatchDto dto) {
         log.info("dto: {}",dto);
         return service.patchConfirmed(dto);

@@ -8,5 +8,5 @@ import lombok.Data;
 public class ProductCompleteDto {
 
     @Schema(title = "유저Pk")
-    private int ProductPk;
+    private int productPk;
 }

@@ -111,3 +111,86 @@
 [2023-12-12 10:37:58 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
 [2023-12-12 10:37:58 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path ''[0;39m
 [2023-12-12 10:37:58 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarted ProjectexApplication in 1.499 seconds (process running for 1.938)[0;39m
+[2023-12-12 11:31:11 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarting ProjectexApplication using Java 17.0.8.1 with PID 2324 (D:\2023-second\java\projectex\target\classes started by Administrator in D:\2023-second\java\projectex)[0;39m
+[2023-12-12 11:31:11 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2023-12-12 11:31:11 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
+[2023-12-12 11:31:11 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
+[2023-12-12 11:31:12 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2023-12-12 11:31:12 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-12 11:31:12 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2023-12-12 11:31:12 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2023-12-12 11:31:12 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2023-12-12 11:31:12 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 897 ms[0;39m
+[2023-12-12 11:31:12 [33mWARN [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mUnable to start LiveReload server[0;39m
+[2023-12-12 11:31:12 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-12 11:31:12 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2023-12-12 11:31:12 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarted ProjectexApplication in 1.797 seconds (process running for 2.152)[0;39m
+[2023-12-12 11:31:44 INFO  main] [com.green.projectex.ProjectexApplicationTests] Starting ProjectexApplicationTests using Java 17.0.8.1 with PID 11192 (started by Administrator in D:\2023-second\java\projectex)
+[2023-12-12 11:31:44 INFO  main] [com.green.projectex.ProjectexApplicationTests] No active profile set, falling back to 1 default profile: "default"
+[2023-12-12 11:31:45 INFO  main] [com.green.projectex.ProjectexApplicationTests] Started ProjectexApplicationTests in 1.486 seconds (process running for 2.111)
+[2023-12-12 11:39:16 INFO  main] [com.green.projectex.ProjectexApplicationTests] Starting ProjectexApplicationTests using Java 17.0.8.1 with PID 10284 (started by Administrator in D:\2023-second\java\projectex)
+[2023-12-12 11:39:16 INFO  main] [com.green.projectex.ProjectexApplicationTests] No active profile set, falling back to 1 default profile: "default"
+[2023-12-12 11:39:17 INFO  main] [com.green.projectex.ProjectexApplicationTests] Started ProjectexApplicationTests in 1.553 seconds (process running for 2.208)
+[2023-12-12 11:40:18 INFO  main] [com.green.projectex.ProjectexApplicationTests] Starting ProjectexApplicationTests using Java 17.0.8.1 with PID 10660 (started by Administrator in D:\2023-second\java\projectex)
+[2023-12-12 11:40:18 INFO  main] [com.green.projectex.ProjectexApplicationTests] No active profile set, falling back to 1 default profile: "default"
+[2023-12-12 11:40:20 INFO  main] [com.green.projectex.ProjectexApplicationTests] Started ProjectexApplicationTests in 1.56 seconds (process running for 2.293)
+[2023-12-12 11:54:19 INFO  main] [com.green.projectex.ProjectexApplicationTests] Starting ProjectexApplicationTests using Java 17.0.8.1 with PID 1488 (started by Administrator in D:\2023-second\java\projectex)
+[2023-12-12 11:54:19 INFO  main] [com.green.projectex.ProjectexApplicationTests] No active profile set, falling back to 1 default profile: "default"
+[2023-12-12 11:54:21 INFO  main] [com.green.projectex.ProjectexApplicationTests] Started ProjectexApplicationTests in 1.528 seconds (process running for 2.152)
+[2023-12-12 11:54:30 INFO  main] [com.green.projectex.ProjectexApplicationTests] Starting ProjectexApplicationTests using Java 17.0.8.1 with PID 5432 (started by Administrator in D:\2023-second\java\projectex)
+[2023-12-12 11:54:30 INFO  main] [com.green.projectex.ProjectexApplicationTests] No active profile set, falling back to 1 default profile: "default"
+[2023-12-12 11:54:31 INFO  main] [com.green.projectex.ProjectexApplicationTests] Started ProjectexApplicationTests in 1.504 seconds (process running for 2.125)
+[2023-12-12 11:58:38 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarting ProjectexApplication using Java 17.0.8.1 with PID 10328 (D:\2023-second\java\projectex\target\classes started by Administrator in D:\2023-second\java\projectex)[0;39m
+[2023-12-12 11:58:38 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2023-12-12 11:58:38 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
+[2023-12-12 11:58:38 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
+[2023-12-12 11:58:39 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2023-12-12 11:58:39 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-12 11:58:39 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2023-12-12 11:58:39 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2023-12-12 11:58:39 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2023-12-12 11:58:39 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 738 ms[0;39m
+[2023-12-12 11:58:39 [33mWARN [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mUnable to start LiveReload server[0;39m
+[2023-12-12 11:58:39 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-12 11:58:39 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2023-12-12 11:58:39 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarted ProjectexApplication in 1.58 seconds (process running for 2.02)[0;39m
+[2023-12-12 11:58:40 [32mINFO [0;39m http-nio-8082-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2023-12-12 11:58:40 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2023-12-12 11:58:40 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 0 ms[0;39m
+[2023-12-12 11:58:40 [32mINFO [0;39m http-nio-8082-exec-9] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 158 ms[0;39m
+[2023-12-12 11:58:55 INFO  main] [com.green.projectex.ProjectexApplicationTests] Starting ProjectexApplicationTests using Java 17.0.8.1 with PID 5352 (started by Administrator in D:\2023-second\java\projectex)
+[2023-12-12 11:58:55 INFO  main] [com.green.projectex.ProjectexApplicationTests] No active profile set, falling back to 1 default profile: "default"
+[2023-12-12 11:58:56 INFO  main] [com.green.projectex.ProjectexApplicationTests] Started ProjectexApplicationTests in 1.533 seconds (process running for 2.193)
+[2023-12-12 12:06:58 INFO  main] [com.green.projectex.ProjectexApplicationTests] Starting ProjectexApplicationTests using Java 17.0.8.1 with PID 9068 (started by Administrator in D:\2023-second\java\projectex)
+[2023-12-12 12:06:58 INFO  main] [com.green.projectex.ProjectexApplicationTests] No active profile set, falling back to 1 default profile: "default"
+[2023-12-12 12:06:59 INFO  main] [com.green.projectex.ProjectexApplicationTests] Started ProjectexApplicationTests in 1.703 seconds (process running for 2.49)
+[2023-12-12 16:54:15 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarting ProjectexApplication using Java 17.0.8.1 with PID 10576 (D:\2023-second\java\projectex\target\classes started by Administrator in D:\2023-second\java\projectex)[0;39m
+[2023-12-12 16:54:15 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2023-12-12 16:54:15 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
+[2023-12-12 16:54:15 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
+[2023-12-12 16:54:16 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2023-12-12 16:54:16 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-12 16:54:16 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2023-12-12 16:54:16 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2023-12-12 16:54:16 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2023-12-12 16:54:16 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 768 ms[0;39m
+[2023-12-12 16:54:16 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2023-12-12 16:54:16 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-12 16:54:16 [33mWARN [0;39m restartedMain] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] [36mException encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'[0;39m
+[2023-12-12 16:54:16 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger] [36m
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.[0;39m
+[2023-12-12 16:54:16 [31mERROR[0;39m restartedMain] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] [36m
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+[0;39m
