@@ -45,23 +45,6 @@ public class ProductService {
         }
         return new ResVo(Const.SUCCESS);
     }
-
-//    public ResVo delProduct(ProductDelDto dto) {
-//        int result = mapper.delProduct(dto);
-//        if(result == 0){
-//            return new ResVo(Const.FAIL);
-//        }
-//        return new ResVo(Const.SUCCESS);
-//    }
-
-//    public ResVo patchConfirmed(ProductPatchDto dto){
-//        int result = mapper.patchConfirmed(dto);
-//        if(result == 0) {
-//            return new ResVo(Const.FAIL);
-//        }
-//        return new ResVo(Const.SUCCESS);
-//    }
-
     public List<CategorySelVo> selCategory(){
         return mapper.selCategory();
     }

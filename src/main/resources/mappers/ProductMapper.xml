@@ -7,24 +7,28 @@
     <!-- 구매 예정 상품 or 확정 상품 리스트 -->
     <select id="selProductList">
         SELECT a.product_pk as productPk,
-        b.category_nm as categoryNm,a.product_nm as productNm,a.memo,
-        if(a.product_count = 1 ,null,a.product_count) AS product_count, a.buying_check as buyingCheck ,a.buying_date as
-        buyingDate
+        b.category_nm as categoryNm,a.product_nm as productNm ,a.memo,a.created_at as createdAt,
+        a.buying_check as buyingCheck ,a.buying_date as buyingDate
         FROM t_purchase_product a
         JOIN t_category b
         ON a.category_pk = b.category_pk
-        WHERE a.user_pk = #{userPk}
-        <choose>
-            <when test="isList == 0">
-                AND a.buying_check <![CDATA[<]]> 2
-            </when>
-            <when test="isList == 1">
-                AND a.buying_check = 0
-            </when>
-            <when test="isList == 2">
-                AND a.buying_check = 1
-            </when>
-        </choose>
+        <where>
+            a.user_pk = #{userPk}
+            <choose>
+                <when test="isList == 0">
+                    AND a.buying_check <![CDATA[<]]> 2
+                </when>
+                <when test="isList == 1">
+                    AND a.buying_check = 0
+                </when>
+                <when test="isList == 2">
+                    AND a.buying_check = 1
+                </when>
+            </choose>
+            <if test="createdAt != null and createdAt != ''">
+                AND DATE(a.created_at) = #{createdAt}
+            </if>
+        </where>
     </select>
 
     <!-- 상품 등록 -->
@@ -68,7 +72,7 @@
         <where>
             product_pk IN
             <foreach collection="productPk" item="productPk" open="(" close=" )" separator=",">
-               #{productPk}
+                #{productPk}
             </foreach>
             AND buying_check = 0
         </where>

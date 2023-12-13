@@ -52,20 +52,6 @@ public class ProductController {
         return service.putProduct(dto);
     }
 
-//    @DeleteMapping
-//    @Operation(summary = "구매 예정 상품 삭제", description = "구매 예정 상품 삭제 처리(여러개 한번에 삭제 가능)")
-//    public ResVo delProduct(ProductDelDto dto){
-//        log.info("dto: {}", dto);
-//        return service.delProduct(dto);
-//    }
-
-//    @PatchMapping("/expunge")
-//
-//    public ResVo patchConfirmed(ProductPatchDto dto) {
-//        log.info("dto: {}",dto);
-//        return service.patchConfirmed(dto);
-//    }
-
     @GetMapping("/category")
     @Operation(summary = "카테고리 목록")
     public List<CategorySelVo> selCategory(){
