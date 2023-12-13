@@ -44,7 +44,7 @@ public class ProductController {
         return service.patchProductCheck(dto);
     }
 
-    @PutMapping("/put")
+    @PutMapping()
     @Operation(summary = "구매 예정 상품 수정", description = "구매 예정 상품 수정 처리")
 
     public ResVo putProduct(@RequestBody ProductPutDto dto){
@@ -52,17 +52,28 @@ public class ProductController {
         return service.putProduct(dto);
     }
 
-    @DeleteMapping
-    @Operation(summary = "구매 예정 상품 삭제", description = "구매 예정 상품 삭제 처리(여러개 한번에 삭제 가능)")
-    public ResVo delProduct(ProductDelDto dto){
-        log.info("dto: {}", dto);
-        return service.delProduct(dto);
-    }
+//    @DeleteMapping
+//    @Operation(summary = "구매 예정 상품 삭제", description = "구매 예정 상품 삭제 처리(여러개 한번에 삭제 가능)")
+//    public ResVo delProduct(ProductDelDto dto){
+//        log.info("dto: {}", dto);
+//        return service.delProduct(dto);
+//    }
 
-    @PatchMapping("/expunge")
-    @Operation(summary = "구매 확정 상품 삭제", description = "구매 확정 상품 삭제 처리(여러개 한번에 삭제 가능,buying_check 2로 수정)")
-    public ResVo patchConfirmed(ProductPatchDto dto) {
-        log.info("dto: {}",dto);
-        return service.patchConfirmed(dto);
+//    @PatchMapping("/expunge")
+//
+//    public ResVo patchConfirmed(ProductPatchDto dto) {
+//        log.info("dto: {}",dto);
+//        return service.patchConfirmed(dto);
+//    }
+
+    @GetMapping("/category")
+    @Operation(summary = "카테고리 목록")
+    public List<CategorySelVo> selCategory(){
+        return service.selCategory();
+    }
+    @DeleteMapping()
+    @Operation(summary = "상품 삭제", description = "상품 삭제 처리(여러개 한번에 삭제 가능,구매 예정 상품은 영구 삭제,구매 확정 상품은 update로 삭제 처리 )")
+    public ResVo delProduct(ProductDelDto dto){
+        return service.delProduct(dto);
     }
 }

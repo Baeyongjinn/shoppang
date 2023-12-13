@@ -18,5 +18,7 @@ public interface ProductMapper {
 
     int delProduct(ProductDelDto dto);
 
-    int patchConfirmed(ProductPatchDto dto);
+    List<CategorySelVo> selCategory();
+
+    int patchConfirmed(ProductDelDto dto);
 }

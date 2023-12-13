@@ -66,9 +66,11 @@
     <delete id="delProduct">
         DELETE FROM t_purchase_product
         <where>
-            <foreach collection="productPk" item="productPk" separator="OR">
-                (product_pk = #{productPk} AND buying_check = 0)
+            product_pk IN
+            <foreach collection="productPk" item="productPk" open="(" close=" )" separator=",">
+               #{productPk}
             </foreach>
+            AND buying_check = 0
         </where>
     </delete>
 
@@ -84,4 +86,9 @@
         </foreach>
         AND buying_check = 1
     </update>
+
+    <select id="selCategory">
+        SELECT category_pk as categoryPk, category_nm as categoryNm
+        FROM t_category
+    </select>
 </mapper>
