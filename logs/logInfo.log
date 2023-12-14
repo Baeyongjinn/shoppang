@@ -16,3 +16,9 @@
 [2023-12-14 09:35:21 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2023-12-14 09:35:21 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
 [2023-12-14 09:35:22 [32mINFO [0;39m http-nio-8082-exec-9] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 162 ms[0;39m
+[2023-12-14 09:40:43 [32mINFO [0;39m http-nio-8082-exec-5] [com.green.projectex.product.ProductController] [36mdto: ProductListDto(userPk=1, isList=0, createdAt=null)[0;39m
+[2023-12-14 09:40:43 [32mINFO [0;39m http-nio-8082-exec-5] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
+[2023-12-14 09:40:43 [32mINFO [0;39m http-nio-8082-exec-5] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection org.mariadb.jdbc.Connection@3035bf54[0;39m
+[2023-12-14 09:40:43 [32mINFO [0;39m http-nio-8082-exec-5] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
+[2023-12-14 09:40:59 [32mINFO [0;39m http-nio-8082-exec-9] [com.green.projectex.product.ProductController] [36mdto: ProductListDto(userPk=1, isList=0, createdAt=2023-12-11)[0;39m
+[2023-12-14 09:41:06 [32mINFO [0;39m http-nio-8082-exec-4] [com.green.projectex.product.ProductController] [36mdto: ProductListDto(userPk=1, isList=0, createdAt=2023-11-11)[0;39m
