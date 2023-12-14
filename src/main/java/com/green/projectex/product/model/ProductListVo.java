@@ -4,7 +4,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 @Data
-@Schema(description = "장바구니 리스트 응답 Vo")
+@Schema(title = "리스트 응답 Vo",description = "장바구니 리스트 응답 Vo")
 public class ProductListVo {
     @Schema(title = "상품 PK")
     private int productPk;
