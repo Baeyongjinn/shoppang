@@ -1,4 +1,4 @@
-package com.green.projectex.product.model;
+package com.green.projectex.category.model;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

@@ -8,7 +8,7 @@
     <select id="selProductList">
         SELECT a.product_pk as productPk,
         b.category_nm as categoryNm,a.product_nm as productNm ,a.memo,a.created_at as createdAt,
-        a.buying_check as buyingCheck ,a.buying_date as buyingDate
+        a.buying_check as buyingCheck ,DATE(a.buying_date) as buyingDate
         FROM t_purchase_product a
         JOIN t_category b
         ON a.category_pk = b.category_pk
@@ -91,8 +91,5 @@
         AND buying_check = 1
     </update>
 
-    <select id="selCategory">
-        SELECT category_pk as categoryPk, category_nm as categoryNm
-        FROM t_category
-    </select>
+
 </mapper>

@@ -1,18 +1,13 @@
 package com.green.projectex.product;
 
 
+import com.green.projectex.category.model.CategorySelVo;
 import com.green.projectex.common.ResVo;
 import com.green.projectex.product.model.*;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.Parameters;
-import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springdoc.core.annotations.RouterOperations;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -54,11 +49,6 @@ public class ProductController {
         return service.putProduct(dto);
     }
 
-    @GetMapping("/category")
-    @Operation(summary = "카테고리 목록")
-    public List<CategorySelVo> selCategory(){
-        return service.selCategory();
-    }
     @DeleteMapping()
     @Operation(summary = "상품 삭제", description = "상품 삭제 처리(여러개 한번에 삭제 가능,구매 예정 상품은 영구 삭제,구매 확정 상품은 update로 삭제 처리 )")
     public ResVo delProduct(ProductDelDto dto){

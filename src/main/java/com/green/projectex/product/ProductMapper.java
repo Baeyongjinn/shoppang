@@ -1,5 +1,6 @@
 package com.green.projectex.product;
 
+import com.green.projectex.category.model.CategorySelVo;
 import com.green.projectex.product.model.*;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -18,7 +19,7 @@ public interface ProductMapper {
 
     int delProduct(ProductDelDto dto);
 
-    List<CategorySelVo> selCategory();
+
 
     int patchConfirmed(ProductDelDto dto);
 }
