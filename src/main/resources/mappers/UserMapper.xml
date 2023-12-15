@@ -8,4 +8,10 @@
         FROM t_user
         WHERE uid = #{uid}
     </select>
+
+    <select id="selByUser">
+        SELECT user_pk as userPk
+        FROM t_user
+        WHERE user_pk = #{userPk}
+    </select>
 </mapper>

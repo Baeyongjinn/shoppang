@@ -19,6 +19,8 @@ public interface ProductMapper {
 
     int delProduct(ProductDelDto dto);
 
+    ProductEntity selEntity(int productPk);
+
 
 
     int patchConfirmed(ProductDelDto dto);

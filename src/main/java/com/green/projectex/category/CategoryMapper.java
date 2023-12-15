@@ -12,4 +12,6 @@ public interface CategoryMapper {
     int insCategory(CategoryInsDto dto);
 
     String selCategoryByNm(String CategoryNm);
+
+    Integer selByCategoryPk(int categoryPk);
 }

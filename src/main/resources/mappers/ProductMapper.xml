@@ -74,7 +74,7 @@
             <foreach collection="productPk" item="productPk" open="(" close=" )" separator=",">
                 #{productPk}
             </foreach>
-            AND buying_check = 0
+            AND buying_check = 0 AND user_pk = #{userPk}
         </where>
     </delete>
 
@@ -90,6 +90,17 @@
         </foreach>
         AND buying_check = 1
     </update>
+
+    <!-- Entity -->
+    <select id="selEntity">
+        SELECT product_pk as productPk, user_pk as userPk, category_pk as categoryPk , product_nm, memo, created_at as createdAt, updated_at as updatedAt,
+        buying_check as buyingCheck, buying_date as buyingDate
+        FROM t_purchase_product
+        <where>
+               product_pk = #{productPk}
+        </where>
+    </select>
+
 
 
 </mapper>

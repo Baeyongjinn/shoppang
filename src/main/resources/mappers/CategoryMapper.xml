@@ -21,4 +21,9 @@
         FROM t_category
         WHERE category_nm = #{categoryNm}
     </select>
+    <select id="selByCategoryPk">
+        SELECT category_pk as categoryPk
+        FROM t_category
+        WHERE category_pk = #{categoryPk}
+    </select>
 </mapper>

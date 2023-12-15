@@ -6,5 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface UserMapper {
 
+    Integer selByUser(int userPk);
+
     String loginedCheck(UserLoginedDto dto);
 }

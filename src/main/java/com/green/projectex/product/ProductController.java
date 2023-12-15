@@ -10,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
+import java.nio.file.attribute.UserPrincipalNotFoundException;
 import java.util.List;
 
 @Tag(name = "product", description = "장바구니 API")
@@ -30,6 +31,7 @@ public class ProductController {
     @PostMapping
     @Operation(summary = "구매 상품 등록", description = "구매 상품 등록 처리")
     public ResVo postProduct(@RequestBody ProductInsDto dto) {
+
         log.info("dto: {}",dto);
         return service.postProduct(dto);
     }
@@ -43,7 +45,6 @@ public class ProductController {
 
     @PutMapping()
     @Operation(summary = "구매 예정 상품 수정", description = "구매 예정 상품 수정 처리")
-
     public ResVo putProduct(@RequestBody ProductPutDto dto){
         log.info("dto: {}",dto);
         return service.putProduct(dto);
