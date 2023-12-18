@@ -89,7 +89,7 @@ public class ProductService {
             throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
                     , ErrorCodeNum.CODE_USER, ErrorCode.USER_ERROR));
         }
-        if(entity.getUserPk() != dto.getUserPk()){
+        if (entity.getUserPk() != dto.getUserPk()) {
             throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
                     , ErrorCodeNum.CODE_USER_CHECK, ErrorCode.CHECK_USER_ERROR));
         }

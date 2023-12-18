@@ -101,28 +101,4 @@
         </where>
     </select>
 
-<!--    <select id="selByEntity">-->
-<!--        SELECT a.product_pk as productPk, b.user_pk as userPk, a.category_pk as categoryPk , a.product_nm, memo, a.created_at as createdAt, a.updated_at as updatedAt,-->
-<!--        a.buying_check as buyingCheck, a.buying_date as buyingDate-->
-<!--        FROM t_purchase_product a-->
-<!--        RIGHT JOIN t_user b-->
-<!--        ON a.user_pk = b.user_pk-->
-<!--        <where>-->
-<!--            b.user_pk = #{userPk}-->
-<!--        </where>-->
-<!--        LIMIT 0,1-->
-<!--    </select>-->
-
-<!--    <select id="selByUserEntity">-->
-<!--        SELECT product_pk as productPk, user_pk as userPk, category_pk as categoryPk , product_nm, memo, created_at as createdAt, updated_at as updatedAt,-->
-<!--        buying_check as buyingCheck, buying_date as buyingDate-->
-<!--        FROM t_purchase_product-->
-<!--        <where>-->
-<!--            product_pk = #{productPk}-->
-<!--            AND user_pk = #{userPk}-->
-<!--        </where>-->
-<!--    </select>-->
-
-
-
 </mapper>

@@ -19,19 +19,21 @@ public class UserService {
     public ResVo loginedCheck(UserSignInDto dto) {
         String upw = mapper.loginedCheck(dto);
         UserEntity entity = mapper.selById(dto.getUid());
-        if(entity == null){
-            throw new CategoryNotFoundException(String.format("CODE[%s]: %s",ErrorCodeNum.CODE_SIGNIN_UID,ErrorCode.SIGNIN_UID_ERROR));
-        }
-        else if(!upw.equals(dto.getUpw())){
-            throw new CategoryNotFoundException(String.format("CODE[%s]: %s",ErrorCodeNum.CODE_SIGNIN_UPW,ErrorCode.SIGNIN_UPW_ERROR));
+        if (entity == null) {
+            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
+                    , ErrorCodeNum.CODE_SIGNIN_UID, ErrorCode.SIGNIN_UID_ERROR));
+        } else if (!upw.equals(dto.getUpw())) {
+            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
+                    , ErrorCodeNum.CODE_SIGNIN_UPW, ErrorCode.SIGNIN_UPW_ERROR));
         }
         return new ResVo(1);
     }
 
-    public ResVo SigneUp(UserSignupDto dto){
+    public ResVo SigneUp(UserSignupDto dto) {
         UserEntity entity = mapper.selById(dto.getUid());
-        if(entity != null) {
-            throw new CategoryNotFoundException(String.format("CODE[%s]: %s", ErrorCodeNum.CODE_CHECK_UID, ErrorCode.CHECK_UID_ERROR));
+        if (entity != null) {
+            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
+                    , ErrorCodeNum.CODE_CHECK_UID, ErrorCode.CHECK_UID_ERROR));
         }
         mapper.signeUp(dto);
         return new ResVo(dto.getUserPk());
