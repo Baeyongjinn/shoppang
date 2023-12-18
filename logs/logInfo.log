@@ -4487,3 +4487,445 @@ Caused by: java.lang.ClassNotFoundException: com.green.projectex.product.Product
 [2023-12-18 16:58:21 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
 [2023-12-18 16:58:21 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarted ProjectexApplication in 0.249 seconds (process running for 16274.221)[0;39m
 [2023-12-18 16:58:21 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2023-12-18 17:02:54 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)[0;39m
+[2023-12-18 17:02:54 [32mINFO [0;39m Thread-248] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:02:54 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarting ProjectexApplication using Java 17.0.8.1 with PID 7560 (D:\2023-second\java\projectex\target\classes started by Administrator in D:\2023-second\java\projectex)[0;39m
+[2023-12-18 17:02:54 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2023-12-18 17:02:54 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2023-12-18 17:02:54 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:02:54 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2023-12-18 17:02:54 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2023-12-18 17:02:54 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2023-12-18 17:02:54 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 153 ms[0;39m
+[2023-12-18 17:02:55 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2023-12-18 17:02:55 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:02:55 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2023-12-18 17:02:55 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarted ProjectexApplication in 0.283 seconds (process running for 16547.463)[0;39m
+[2023-12-18 17:02:55 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2023-12-18 17:10:11 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 4 class path changes (0 additions, 4 deletions, 0 modifications)[0;39m
+[2023-12-18 17:10:11 [32mINFO [0;39m Thread-252] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:10:11 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarting ProjectexApplication using Java 17.0.8.1 with PID 7560 (D:\2023-second\java\projectex\target\classes started by Administrator in D:\2023-second\java\projectex)[0;39m
+[2023-12-18 17:10:11 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2023-12-18 17:10:11 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2023-12-18 17:10:11 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:10:11 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2023-12-18 17:10:11 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2023-12-18 17:10:11 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2023-12-18 17:10:11 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 176 ms[0;39m
+[2023-12-18 17:10:11 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2023-12-18 17:10:11 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:10:11 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2023-12-18 17:10:11 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarted ProjectexApplication in 0.319 seconds (process running for 16984.115)[0;39m
+[2023-12-18 17:10:11 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2023-12-18 17:10:13 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 4 class path changes (4 additions, 0 deletions, 0 modifications)[0;39m
+[2023-12-18 17:10:13 [32mINFO [0;39m Thread-256] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:10:13 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarting ProjectexApplication using Java 17.0.8.1 with PID 7560 (D:\2023-second\java\projectex\target\classes started by Administrator in D:\2023-second\java\projectex)[0;39m
+[2023-12-18 17:10:13 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2023-12-18 17:10:13 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2023-12-18 17:10:13 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:10:13 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2023-12-18 17:10:13 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2023-12-18 17:10:13 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2023-12-18 17:10:13 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 140 ms[0;39m
+[2023-12-18 17:10:13 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2023-12-18 17:10:13 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:10:13 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2023-12-18 17:10:13 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarted ProjectexApplication in 0.249 seconds (process running for 16985.832)[0;39m
+[2023-12-18 17:10:13 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2023-12-18 17:10:23 [32mINFO [0;39m http-nio-8082-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2023-12-18 17:10:23 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2023-12-18 17:10:23 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
+[2023-12-18 17:10:23 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-34 - Starting...[0;39m
+[2023-12-18 17:10:23 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-34 - Added connection org.mariadb.jdbc.Connection@379ae8ca[0;39m
+[2023-12-18 17:10:23 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-34 - Start completed.[0;39m
+[2023-12-18 17:10:23 [33mWARN [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0010]: 동일한 카테고리 이름이 있습니다][0;39m
+[2023-12-18 17:19:24 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)[0;39m
+[2023-12-18 17:19:24 [32mINFO [0;39m Thread-260] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:19:24 [32mINFO [0;39m Thread-260] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-34 - Shutdown initiated...[0;39m
+[2023-12-18 17:19:24 [32mINFO [0;39m Thread-260] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-34 - Shutdown completed.[0;39m
+[2023-12-18 17:19:24 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarting ProjectexApplication using Java 17.0.8.1 with PID 7560 (D:\2023-second\java\projectex\target\classes started by Administrator in D:\2023-second\java\projectex)[0;39m
+[2023-12-18 17:19:24 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2023-12-18 17:19:25 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2023-12-18 17:19:25 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:19:25 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2023-12-18 17:19:25 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2023-12-18 17:19:25 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat-3].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2023-12-18 17:19:25 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 170 ms[0;39m
+[2023-12-18 17:19:25 [33mWARN [0;39m restartedMain] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] [36mException encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryController': Resolution of declared constructors on bean Class [com.green.projectex.category.CategoryController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6e9a7d32] failed[0;39m
+[2023-12-18 17:19:25 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStopping service [Tomcat][0;39m
+[2023-12-18 17:19:25 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger] [36m
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.[0;39m
+[2023-12-18 17:19:25 [31mERROR[0;39m restartedMain] [org.springframework.boot.SpringApplication] [36mApplication run failed[0;39m
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryController': Resolution of declared constructors on bean Class [com.green.projectex.category.CategoryController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6e9a7d32] failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1295)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1190)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:946)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.green.projectex.ProjectexApplication.main(ProjectexApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.NoClassDefFoundError: com/green/projectex/category/CategoryService
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3373)
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2555)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:363)
+	... 23 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.green.projectex.category.CategoryService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 27 common frames omitted
+[2023-12-18 17:19:32 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarting ProjectexApplication using Java 17.0.8.1 with PID 7560 (D:\2023-second\java\projectex\target\classes started by Administrator in D:\2023-second\java\projectex)[0;39m
+[2023-12-18 17:19:32 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2023-12-18 17:19:32 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2023-12-18 17:19:32 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:19:32 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2023-12-18 17:19:32 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2023-12-18 17:19:32 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2023-12-18 17:19:32 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 139 ms[0;39m
+[2023-12-18 17:19:32 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2023-12-18 17:19:32 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:19:32 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2023-12-18 17:19:32 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarted ProjectexApplication in 0.26 seconds (process running for 17545.371)[0;39m
+[2023-12-18 17:19:32 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2023-12-18 17:19:40 [32mINFO [0;39m http-nio-8082-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2023-12-18 17:19:40 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2023-12-18 17:19:40 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 0 ms[0;39m
+[2023-12-18 17:19:40 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-35 - Starting...[0;39m
+[2023-12-18 17:19:40 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-35 - Added connection org.mariadb.jdbc.Connection@16160fb8[0;39m
+[2023-12-18 17:19:40 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-35 - Start completed.[0;39m
+[2023-12-18 17:19:40 [33mWARN [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E001]: 잘못된 유저Pk가 입력 되었습니다][0;39m
+[2023-12-18 17:20:03 [33mWARN [0;39m http-nio-8082-exec-2] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E004]: 다른 유저의 상품 입니다][0;39m
+[2023-12-18 17:20:59 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 0 deletions, 1 modification)[0;39m
+[2023-12-18 17:20:59 [32mINFO [0;39m Thread-264] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:20:59 [32mINFO [0;39m Thread-264] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-35 - Shutdown initiated...[0;39m
+[2023-12-18 17:20:59 [32mINFO [0;39m Thread-264] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-35 - Shutdown completed.[0;39m
+[2023-12-18 17:20:59 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarting ProjectexApplication using Java 17.0.8.1 with PID 7560 (D:\2023-second\java\projectex\target\classes started by Administrator in D:\2023-second\java\projectex)[0;39m
+[2023-12-18 17:20:59 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2023-12-18 17:21:00 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2023-12-18 17:21:00 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:21:00 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2023-12-18 17:21:00 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2023-12-18 17:21:00 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2023-12-18 17:21:00 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 154 ms[0;39m
+[2023-12-18 17:21:00 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2023-12-18 17:21:00 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:21:00 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2023-12-18 17:21:00 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarted ProjectexApplication in 0.281 seconds (process running for 17632.614)[0;39m
+[2023-12-18 17:21:00 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2023-12-18 17:21:06 [32mINFO [0;39m http-nio-8082-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2023-12-18 17:21:06 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2023-12-18 17:21:06 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
+[2023-12-18 17:21:06 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-36 - Starting...[0;39m
+[2023-12-18 17:21:06 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-36 - Added connection org.mariadb.jdbc.Connection@63cfee7[0;39m
+[2023-12-18 17:21:06 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-36 - Start completed.[0;39m
+[2023-12-18 17:22:41 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 0 deletions, 1 modification)[0;39m
+[2023-12-18 17:22:41 [32mINFO [0;39m Thread-271] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:22:41 [32mINFO [0;39m Thread-271] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-36 - Shutdown initiated...[0;39m
+[2023-12-18 17:22:41 [32mINFO [0;39m Thread-271] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-36 - Shutdown completed.[0;39m
+[2023-12-18 17:22:42 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarting ProjectexApplication using Java 17.0.8.1 with PID 7560 (D:\2023-second\java\projectex\target\classes started by Administrator in D:\2023-second\java\projectex)[0;39m
+[2023-12-18 17:22:42 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2023-12-18 17:22:42 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2023-12-18 17:22:42 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:22:42 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2023-12-18 17:22:42 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2023-12-18 17:22:42 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2023-12-18 17:22:42 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 139 ms[0;39m
+[2023-12-18 17:22:42 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2023-12-18 17:22:42 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:22:42 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2023-12-18 17:22:42 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarted ProjectexApplication in 0.244 seconds (process running for 17734.705)[0;39m
+[2023-12-18 17:22:42 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2023-12-18 17:23:53 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)[0;39m
+[2023-12-18 17:23:53 [32mINFO [0;39m Thread-275] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:23:53 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarting ProjectexApplication using Java 17.0.8.1 with PID 7560 (D:\2023-second\java\projectex\target\classes started by Administrator in D:\2023-second\java\projectex)[0;39m
+[2023-12-18 17:23:53 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2023-12-18 17:23:53 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2023-12-18 17:23:53 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:23:53 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2023-12-18 17:23:53 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2023-12-18 17:23:53 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2023-12-18 17:23:53 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 156 ms[0;39m
+[2023-12-18 17:23:53 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2023-12-18 17:23:53 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:23:53 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2023-12-18 17:23:53 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarted ProjectexApplication in 0.27 seconds (process running for 17805.834)[0;39m
+[2023-12-18 17:23:53 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2023-12-18 17:23:54 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)[0;39m
+[2023-12-18 17:23:54 [32mINFO [0;39m Thread-279] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:23:54 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarting ProjectexApplication using Java 17.0.8.1 with PID 7560 (D:\2023-second\java\projectex\target\classes started by Administrator in D:\2023-second\java\projectex)[0;39m
+[2023-12-18 17:23:54 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2023-12-18 17:23:55 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2023-12-18 17:23:55 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:23:55 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2023-12-18 17:23:55 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2023-12-18 17:23:55 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2023-12-18 17:23:55 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 143 ms[0;39m
+[2023-12-18 17:23:55 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2023-12-18 17:23:55 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:23:55 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2023-12-18 17:23:55 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarted ProjectexApplication in 0.248 seconds (process running for 17807.551)[0;39m
+[2023-12-18 17:23:55 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2023-12-18 17:23:55 [32mINFO [0;39m http-nio-8082-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2023-12-18 17:23:55 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2023-12-18 17:23:55 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
+[2023-12-18 17:23:55 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-37 - Starting...[0;39m
+[2023-12-18 17:23:55 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-37 - Added connection org.mariadb.jdbc.Connection@7582264f[0;39m
+[2023-12-18 17:23:55 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-37 - Start completed.[0;39m
+[2023-12-18 17:23:55 [33mWARN [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0010]: 다른상품입니다][0;39m
+[2023-12-18 17:23:59 [33mWARN [0;39m http-nio-8082-exec-2] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0010]: 다른상품입니다][0;39m
+[2023-12-18 17:24:03 [33mWARN [0;39m http-nio-8082-exec-3] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0010]: 다른상품입니다][0;39m
+[2023-12-18 17:24:12 [33mWARN [0;39m http-nio-8082-exec-7] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.green.projectex.category.model.CategoryInsDto.getCategoryNm()" is null][0;39m
+[2023-12-18 17:24:13 [33mWARN [0;39m http-nio-8082-exec-9] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.green.projectex.category.model.CategoryInsDto.getCategoryNm()" is null][0;39m
+[2023-12-18 17:24:14 [33mWARN [0;39m http-nio-8082-exec-10] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.green.projectex.category.model.CategoryInsDto.getCategoryNm()" is null][0;39m
+[2023-12-18 17:24:14 [33mWARN [0;39m http-nio-8082-exec-4] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.green.projectex.category.model.CategoryInsDto.getCategoryNm()" is null][0;39m
+[2023-12-18 17:24:14 [33mWARN [0;39m http-nio-8082-exec-5] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.green.projectex.category.model.CategoryInsDto.getCategoryNm()" is null][0;39m
+[2023-12-18 17:24:15 [33mWARN [0;39m http-nio-8082-exec-8] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.green.projectex.category.model.CategoryInsDto.getCategoryNm()" is null][0;39m
+[2023-12-18 17:24:15 [33mWARN [0;39m http-nio-8082-exec-6] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.green.projectex.category.model.CategoryInsDto.getCategoryNm()" is null][0;39m
+[2023-12-18 17:24:27 [33mWARN [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): expected a value][0;39m
+[2023-12-18 17:24:29 [33mWARN [0;39m http-nio-8082-exec-2] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): expected a value][0;39m
+[2023-12-18 17:24:30 [33mWARN [0;39m http-nio-8082-exec-3] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): expected a value][0;39m
+[2023-12-18 17:24:36 [33mWARN [0;39m http-nio-8082-exec-7] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "com.green.projectex.category.model.CategoryInsDto.getCategoryNm()" is null][0;39m
+[2023-12-18 17:26:09 [33mWARN [0;39m http-nio-8082-exec-9] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): expected a value][0;39m
+[2023-12-18 17:26:10 [33mWARN [0;39m http-nio-8082-exec-10] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): expected a value][0;39m
+[2023-12-18 17:26:10 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)[0;39m
+[2023-12-18 17:26:10 [32mINFO [0;39m Thread-283] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:26:10 [32mINFO [0;39m Thread-283] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-37 - Shutdown initiated...[0;39m
+[2023-12-18 17:26:10 [32mINFO [0;39m Thread-283] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-37 - Shutdown completed.[0;39m
+[2023-12-18 17:26:10 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarting ProjectexApplication using Java 17.0.8.1 with PID 7560 (D:\2023-second\java\projectex\target\classes started by Administrator in D:\2023-second\java\projectex)[0;39m
+[2023-12-18 17:26:10 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2023-12-18 17:26:10 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2023-12-18 17:26:10 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:26:10 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2023-12-18 17:26:10 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2023-12-18 17:26:10 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2023-12-18 17:26:10 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 136 ms[0;39m
+[2023-12-18 17:26:10 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2023-12-18 17:26:10 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:26:10 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2023-12-18 17:26:10 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarted ProjectexApplication in 0.241 seconds (process running for 17943.143)[0;39m
+[2023-12-18 17:26:10 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2023-12-18 17:26:13 [32mINFO [0;39m http-nio-8082-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2023-12-18 17:26:13 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2023-12-18 17:26:13 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
+[2023-12-18 17:26:13 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-38 - Starting...[0;39m
+[2023-12-18 17:26:13 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-38 - Added connection org.mariadb.jdbc.Connection@58cd4fd2[0;39m
+[2023-12-18 17:26:13 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-38 - Start completed.[0;39m
+[2023-12-18 17:26:13 [33mWARN [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:26:13 [33mWARN [0;39m http-nio-8082-exec-2] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:26:16 [33mWARN [0;39m http-nio-8082-exec-7] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:26:22 [33mWARN [0;39m http-nio-8082-exec-9] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:26:23 [33mWARN [0;39m http-nio-8082-exec-5] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:26:23 [33mWARN [0;39m http-nio-8082-exec-6] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:26:24 [33mWARN [0;39m http-nio-8082-exec-3] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:26:34 [33mWARN [0;39m http-nio-8082-exec-8] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:26:34 [33mWARN [0;39m http-nio-8082-exec-4] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:26:34 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 0 deletions, 1 modification)[0;39m
+[2023-12-18 17:26:34 [32mINFO [0;39m Thread-287] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:26:34 [32mINFO [0;39m Thread-287] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-38 - Shutdown initiated...[0;39m
+[2023-12-18 17:26:34 [32mINFO [0;39m Thread-287] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-38 - Shutdown completed.[0;39m
+[2023-12-18 17:26:34 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarting ProjectexApplication using Java 17.0.8.1 with PID 7560 (D:\2023-second\java\projectex\target\classes started by Administrator in D:\2023-second\java\projectex)[0;39m
+[2023-12-18 17:26:34 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2023-12-18 17:26:35 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2023-12-18 17:26:35 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:26:35 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2023-12-18 17:26:35 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2023-12-18 17:26:35 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2023-12-18 17:26:35 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 135 ms[0;39m
+[2023-12-18 17:26:35 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2023-12-18 17:26:35 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:26:35 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2023-12-18 17:26:35 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarted ProjectexApplication in 0.244 seconds (process running for 17967.616)[0;39m
+[2023-12-18 17:26:35 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2023-12-18 17:26:35 [32mINFO [0;39m http-nio-8082-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2023-12-18 17:26:35 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2023-12-18 17:26:35 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 2 ms[0;39m
+[2023-12-18 17:26:35 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-39 - Starting...[0;39m
+[2023-12-18 17:26:35 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-39 - Added connection org.mariadb.jdbc.Connection@6552410c[0;39m
+[2023-12-18 17:26:35 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-39 - Start completed.[0;39m
+[2023-12-18 17:26:35 [33mWARN [0;39m http-nio-8082-exec-5] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0010]: 동일한 카테고리 이름이 있습니다][0;39m
+[2023-12-18 17:26:36 [33mWARN [0;39m http-nio-8082-exec-8] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0010]: 동일한 카테고리 이름이 있습니다][0;39m
+[2023-12-18 17:27:04 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 0 deletions, 1 modification)[0;39m
+[2023-12-18 17:27:04 [32mINFO [0;39m Thread-291] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:27:04 [32mINFO [0;39m Thread-291] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-39 - Shutdown initiated...[0;39m
+[2023-12-18 17:27:04 [32mINFO [0;39m Thread-291] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-39 - Shutdown completed.[0;39m
+[2023-12-18 17:27:04 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarting ProjectexApplication using Java 17.0.8.1 with PID 7560 (D:\2023-second\java\projectex\target\classes started by Administrator in D:\2023-second\java\projectex)[0;39m
+[2023-12-18 17:27:04 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2023-12-18 17:27:04 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2023-12-18 17:27:04 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:27:04 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2023-12-18 17:27:04 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2023-12-18 17:27:04 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2023-12-18 17:27:04 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 137 ms[0;39m
+[2023-12-18 17:27:04 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2023-12-18 17:27:04 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:27:04 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2023-12-18 17:27:04 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarted ProjectexApplication in 0.239 seconds (process running for 17997.286)[0;39m
+[2023-12-18 17:27:04 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2023-12-18 17:27:09 [32mINFO [0;39m http-nio-8082-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2023-12-18 17:27:09 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2023-12-18 17:27:09 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
+[2023-12-18 17:27:09 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-40 - Starting...[0;39m
+[2023-12-18 17:27:09 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-40 - Added connection org.mariadb.jdbc.Connection@2cc2aa4c[0;39m
+[2023-12-18 17:27:09 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-40 - Start completed.[0;39m
+[2023-12-18 17:27:09 [33mWARN [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:27:10 [33mWARN [0;39m http-nio-8082-exec-4] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:27:11 [33mWARN [0;39m http-nio-8082-exec-8] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:27:12 [33mWARN [0;39m http-nio-8082-exec-10] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:27:23 [33mWARN [0;39m http-nio-8082-exec-5] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:27:24 [33mWARN [0;39m http-nio-8082-exec-6] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:27:30 [33mWARN [0;39m http-nio-8082-exec-7] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:27:30 [33mWARN [0;39m http-nio-8082-exec-3] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:27:30 [33mWARN [0;39m http-nio-8082-exec-9] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:27:31 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 0 deletions, 1 modification)[0;39m
+[2023-12-18 17:27:31 [32mINFO [0;39m Thread-295] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:27:31 [32mINFO [0;39m Thread-295] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-40 - Shutdown initiated...[0;39m
+[2023-12-18 17:27:31 [32mINFO [0;39m Thread-295] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-40 - Shutdown completed.[0;39m
+[2023-12-18 17:27:31 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarting ProjectexApplication using Java 17.0.8.1 with PID 7560 (D:\2023-second\java\projectex\target\classes started by Administrator in D:\2023-second\java\projectex)[0;39m
+[2023-12-18 17:27:31 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2023-12-18 17:27:31 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2023-12-18 17:27:31 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:27:31 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2023-12-18 17:27:31 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2023-12-18 17:27:31 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2023-12-18 17:27:31 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 140 ms[0;39m
+[2023-12-18 17:27:31 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2023-12-18 17:27:31 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:27:31 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2023-12-18 17:27:31 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarted ProjectexApplication in 0.247 seconds (process running for 18023.872)[0;39m
+[2023-12-18 17:27:31 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2023-12-18 17:27:31 [32mINFO [0;39m http-nio-8082-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2023-12-18 17:27:31 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2023-12-18 17:27:31 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
+[2023-12-18 17:27:31 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-41 - Starting...[0;39m
+[2023-12-18 17:27:31 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-41 - Added connection org.mariadb.jdbc.Connection@41af1a87[0;39m
+[2023-12-18 17:27:31 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-41 - Start completed.[0;39m
+[2023-12-18 17:27:31 [33mWARN [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0010]: 동일한 카테고리 이름이 있습니다][0;39m
+[2023-12-18 17:27:31 [33mWARN [0;39m http-nio-8082-exec-2] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0010]: 동일한 카테고리 이름이 있습니다][0;39m
+[2023-12-18 17:27:35 [33mWARN [0;39m http-nio-8082-exec-8] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:27:36 [33mWARN [0;39m http-nio-8082-exec-4] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:27:36 [33mWARN [0;39m http-nio-8082-exec-5] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:27:37 [33mWARN [0;39m http-nio-8082-exec-6] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:27:37 [33mWARN [0;39m http-nio-8082-exec-7] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:27:39 [33mWARN [0;39m http-nio-8082-exec-9] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:27:40 [33mWARN [0;39m http-nio-8082-exec-3] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:27:41 [33mWARN [0;39m http-nio-8082-exec-10] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:27:41 [33mWARN [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:27:41 [33mWARN [0;39m http-nio-8082-exec-2] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:27:41 [33mWARN [0;39m http-nio-8082-exec-8] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:27:42 [33mWARN [0;39m http-nio-8082-exec-4] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:27:42 [33mWARN [0;39m http-nio-8082-exec-5] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:27:47 [33mWARN [0;39m http-nio-8082-exec-6] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0010]: 동일한 카테고리 이름이 있습니다][0;39m
+[2023-12-18 17:27:47 [33mWARN [0;39m http-nio-8082-exec-7] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0010]: 동일한 카테고리 이름이 있습니다][0;39m
+[2023-12-18 17:27:54 [33mWARN [0;39m http-nio-8082-exec-9] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0010]: 동일한 카테고리 이름이 있습니다][0;39m
+[2023-12-18 17:27:58 [33mWARN [0;39m http-nio-8082-exec-3] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:27:59 [33mWARN [0;39m http-nio-8082-exec-10] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:49:02 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)[0;39m
+[2023-12-18 17:49:02 [32mINFO [0;39m Thread-299] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:49:02 [32mINFO [0;39m Thread-299] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-41 - Shutdown initiated...[0;39m
+[2023-12-18 17:49:02 [32mINFO [0;39m Thread-299] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-41 - Shutdown completed.[0;39m
+[2023-12-18 17:49:02 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarting ProjectexApplication using Java 17.0.8.1 with PID 7560 (D:\2023-second\java\projectex\target\classes started by Administrator in D:\2023-second\java\projectex)[0;39m
+[2023-12-18 17:49:02 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2023-12-18 17:49:02 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2023-12-18 17:49:02 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:49:02 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2023-12-18 17:49:02 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2023-12-18 17:49:02 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2023-12-18 17:49:02 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 158 ms[0;39m
+[2023-12-18 17:49:02 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2023-12-18 17:49:02 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:49:02 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2023-12-18 17:49:02 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarted ProjectexApplication in 0.317 seconds (process running for 19315.388)[0;39m
+[2023-12-18 17:49:02 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2023-12-18 17:49:04 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)[0;39m
+[2023-12-18 17:49:04 [32mINFO [0;39m Thread-303] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:49:04 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarting ProjectexApplication using Java 17.0.8.1 with PID 7560 (D:\2023-second\java\projectex\target\classes started by Administrator in D:\2023-second\java\projectex)[0;39m
+[2023-12-18 17:49:04 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2023-12-18 17:49:04 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2023-12-18 17:49:04 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:49:04 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2023-12-18 17:49:04 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2023-12-18 17:49:04 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2023-12-18 17:49:04 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 137 ms[0;39m
+[2023-12-18 17:49:04 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2023-12-18 17:49:04 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 17:49:04 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2023-12-18 17:49:04 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarted ProjectexApplication in 0.241 seconds (process running for 19317.093)[0;39m
+[2023-12-18 17:49:04 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2023-12-18 17:59:08 [32mINFO [0;39m http-nio-8082-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2023-12-18 17:59:08 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2023-12-18 17:59:08 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 0 ms[0;39m
+[2023-12-18 17:59:08 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-42 - Starting...[0;39m
+[2023-12-18 17:59:08 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-42 - Added connection org.mariadb.jdbc.Connection@42269068[0;39m
+[2023-12-18 17:59:08 [32mINFO [0;39m http-nio-8082-exec-1] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-42 - Start completed.[0;39m
+[2023-12-18 17:59:08 [33mWARN [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:59:09 [33mWARN [0;39m http-nio-8082-exec-4] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 17:59:15 [33mWARN [0;39m http-nio-8082-exec-7] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0010]: 동일한 카테고리 이름이 있습니다][0;39m
+[2023-12-18 17:59:20 [33mWARN [0;39m http-nio-8082-exec-10] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [com.green.projectex.errortest.CategoryNotFoundException: CODE[E0011]: 카테고리 이름을 입력하세요][0;39m
+[2023-12-18 18:00:45 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)[0;39m
+[2023-12-18 18:00:45 [32mINFO [0;39m Thread-307] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 18:00:45 [32mINFO [0;39m Thread-307] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-42 - Shutdown initiated...[0;39m
+[2023-12-18 18:00:45 [32mINFO [0;39m Thread-307] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-42 - Shutdown completed.[0;39m
+[2023-12-18 18:00:45 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarting ProjectexApplication using Java 17.0.8.1 with PID 7560 (D:\2023-second\java\projectex\target\classes started by Administrator in D:\2023-second\java\projectex)[0;39m
+[2023-12-18 18:00:45 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2023-12-18 18:00:45 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2023-12-18 18:00:45 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 18:00:45 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2023-12-18 18:00:45 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2023-12-18 18:00:45 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2023-12-18 18:00:45 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 163 ms[0;39m
+[2023-12-18 18:00:45 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2023-12-18 18:00:45 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 18:00:45 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2023-12-18 18:00:45 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarted ProjectexApplication in 0.295 seconds (process running for 20018.304)[0;39m
+[2023-12-18 18:00:45 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2023-12-18 18:00:47 [32mINFO [0;39m http-nio-8082-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2023-12-18 18:00:47 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2023-12-18 18:00:47 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 0 ms[0;39m
+[2023-12-18 18:00:47 [32mINFO [0;39m http-nio-8082-exec-4] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 28 ms[0;39m
+[2023-12-18 18:00:47 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)[0;39m
+[2023-12-18 18:00:47 [32mINFO [0;39m Thread-311] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 18:00:47 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarting ProjectexApplication using Java 17.0.8.1 with PID 7560 (D:\2023-second\java\projectex\target\classes started by Administrator in D:\2023-second\java\projectex)[0;39m
+[2023-12-18 18:00:47 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2023-12-18 18:00:47 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8082 (http)[0;39m
+[2023-12-18 18:00:47 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 18:00:47 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2023-12-18 18:00:47 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.16][0;39m
+[2023-12-18 18:00:47 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2023-12-18 18:00:47 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 139 ms[0;39m
+[2023-12-18 18:00:47 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2023-12-18 18:00:47 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8082"][0;39m
+[2023-12-18 18:00:47 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8082 (http) with context path ''[0;39m
+[2023-12-18 18:00:47 [32mINFO [0;39m restartedMain] [com.green.projectex.ProjectexApplication] [36mStarted ProjectexApplication in 0.244 seconds (process running for 20020.024)[0;39m
+[2023-12-18 18:00:47 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2023-12-18 18:00:47 [32mINFO [0;39m http-nio-8082-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat-4].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2023-12-18 18:00:47 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2023-12-18 18:00:47 [32mINFO [0;39m http-nio-8082-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 0 ms[0;39m
+[2023-12-18 18:00:47 [32mINFO [0;39m http-nio-8082-exec-10] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 26 ms[0;39m
+[2023-12-18 18:03:37 [32mINFO [0;39m http-nio-8082-exec-7] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-43 - Starting...[0;39m
+[2023-12-18 18:03:37 [32mINFO [0;39m http-nio-8082-exec-7] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-43 - Added connection org.mariadb.jdbc.Connection@1ee113d6[0;39m
+[2023-12-18 18:03:37 [32mINFO [0;39m http-nio-8082-exec-7] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-43 - Start completed.[0;39m
+[2023-12-18 18:07:45 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-43 - Shutdown initiated...[0;39m
+[2023-12-18 18:07:45 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-43 - Shutdown completed.[0;39m

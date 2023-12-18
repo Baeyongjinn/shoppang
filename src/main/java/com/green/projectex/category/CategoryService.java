@@ -4,6 +4,9 @@ import com.green.projectex.category.model.CategoryInsDto;
 import com.green.projectex.category.model.CategorySelVo;
 import com.green.projectex.common.Const;
 import com.green.projectex.common.ResVo;
+import com.green.projectex.errortest.CategoryNotFoundException;
+import com.green.projectex.errortest.ErrorCode;
+import com.green.projectex.errortest.ErrorCodeNum;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -23,13 +26,13 @@ public class CategoryService {
 
     public ResVo insCategory(CategoryInsDto dto){
         String checkNm = mapper.selCategoryByNm(dto.getCategoryNm());
-        log.info("checkNm: {}",checkNm);
-
-        if(checkNm == null){
-            mapper.insCategory(dto);
-            log.info("checkNm: {}",checkNm);
-            return new ResVo(Const.SUCCESS);
+        if(dto.getCategoryNm().equals(checkNm)){
+           throw new CategoryNotFoundException(String.format("CODE[%s]: %s", ErrorCodeNum.CODE_CATEGORY_CHECK, ErrorCode.CATEGORY_CHECK_ERROR));
         }
-        return new ResVo(Const.FAIL);
+        if(!(dto.getCategoryNm().equals(" ") && dto.getCategoryNm() == null)) {
+            throw new CategoryNotFoundException(String.format("CODE[%s]: %s",ErrorCodeNum.CODE_NULL_CATEGORY,ErrorCode.NULL_CATEGORY_ERROR));
+        }
+        mapper.insCategory(dto);
+        return new ResVo(Const.SUCCESS);
     }
 }

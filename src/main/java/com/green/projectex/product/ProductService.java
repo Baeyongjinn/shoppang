@@ -36,8 +36,6 @@ public class ProductService {
         }
         return mapper.selProductList(dto);
     }
-
-    //성공: 1 실패: 0
     //상품 입력
     public ResVo postProduct(ProductInsDto dto) {
         Integer categoryCheck = categoryMapper.selByCategoryPk(dto.getCategoryPk());
