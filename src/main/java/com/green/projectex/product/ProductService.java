@@ -42,7 +42,7 @@ public class ProductService {
     public ResVo postProduct(ProductInsDto dto) {
         Integer categoryCheck = categoryMapper.selByCategoryPk(dto.getCategoryPk());
         Integer checkUserPk = userMapper.selByUser(dto.getUserPk());
-        if(checkUserPk == null){
+        if (checkUserPk == null) {
             throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
                     , ErrorCodeNum.CODE_USER, ErrorCode.USER_ERROR));
         }
@@ -89,6 +89,10 @@ public class ProductService {
             throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
                     , ErrorCodeNum.CODE_USER, ErrorCode.USER_ERROR));
         }
+        if(entity.getUserPk() != dto.getUserPk()){
+            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
+                    , ErrorCodeNum.CODE_USER_CHECK, ErrorCode.CHECK_USER_ERROR));
+        }
         if (entity == null) {
             throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
                     , ErrorCodeNum.CODE_PRODUCT, ErrorCode.PRODUCT_ERROR));
@@ -126,10 +130,8 @@ public class ProductService {
                     , ErrorCodeNum.CODE_USER_CHECK, ErrorCode.CHECK_USER_ERROR));
         }
 
-
-        int affectedRows = mapper.delProduct(dto);
-        int affectedRows2 = mapper.patchConfirmed(dto);
-
+        mapper.delProduct(dto);
+        mapper.patchConfirmed(dto);
         return new ResVo(Const.SUCCESS);
     }
 }

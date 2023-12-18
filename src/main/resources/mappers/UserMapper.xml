@@ -14,4 +14,18 @@
         FROM t_user
         WHERE user_pk = #{userPk}
     </select>
+
+    <select id="selById">
+        SELECT user_pk as userPk, uid,upw,nm
+        FROM t_user
+        WHERE uid = #{uid}
+    </select>
+
+
+    <insert id="signeUp" useGeneratedKeys="true" keyProperty="userPk">
+        INSERT INTO t_user
+        (uid,upw,nm)
+        VALUES
+        (#{uid},#{upw},#{nm})
+    </insert>
 </mapper>
