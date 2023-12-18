@@ -47,7 +47,7 @@
         UPDATE t_purchase_product
         SET buying_check = 1
         ,buying_date = NOW()
-        WHERE product_pk = #{productPk}
+        WHERE product_pk = #{productPk} AND user_pk = #{userPk}
     </update>
 
     <!-- 구매 예정상품 수정 -->
@@ -63,32 +63,32 @@
         <if test="memo != null and memo != ''">
             ,memo = #{memo}
         </if>
-        WHERE product_pk = #{productPk} AND buying_check = 0
+        WHERE product_pk = #{productPk} AND buying_check = 0 AND user_pk = #{userPk}
     </update>
 
     <!-- 구매 예정 상품 삭제 -->
     <delete id="delProduct">
         DELETE FROM t_purchase_product
         <where>
-            product_pk IN
-            <foreach collection="productPk" item="productPk" open="(" close=" )" separator=",">
-                #{productPk}
-            </foreach>
-            AND buying_check = 0 AND user_pk = #{userPk}
-        </where>
-    </delete>
+            product_pk =
+    <!-- <foreach collection="productPk" item="productPk" open="(" close=" )" separator=","> -->
+         #{productPk}
+    <!-- </foreach>  -->
+     AND buying_check = 0 AND user_pk = #{userPk}
+ </where>
+</delete>
 
-    <!-- 구매 확정 상품 삭제시 2로바꾸기 -->
+<!-- 구매 확정 상품 삭제시 2로바꾸기 -->
     <update id="patchConfirmed">
         UPDATE t_purchase_product
         <set>
             buying_check = 2
         </set>
-        WHERE product_pk IN
-        <foreach collection="productPk" item="productPk" open="(" close=")" separator=",">
-            #{productPk}
-        </foreach>
-        AND buying_check = 1
+        WHERE
+       <!-- <foreach collection="productPk" item="productPk" open="(" close=")" separator=","> -->
+            product_pk = #{productPk}
+        <!--</foreach> -->
+        AND buying_check = 1 AND user_pk = #{userPk}
     </update>
 
     <!-- Entity -->
@@ -100,6 +100,28 @@
                product_pk = #{productPk}
         </where>
     </select>
+
+<!--    <select id="selByEntity">-->
+<!--        SELECT a.product_pk as productPk, b.user_pk as userPk, a.category_pk as categoryPk , a.product_nm, memo, a.created_at as createdAt, a.updated_at as updatedAt,-->
+<!--        a.buying_check as buyingCheck, a.buying_date as buyingDate-->
+<!--        FROM t_purchase_product a-->
+<!--        RIGHT JOIN t_user b-->
+<!--        ON a.user_pk = b.user_pk-->
+<!--        <where>-->
+<!--            b.user_pk = #{userPk}-->
+<!--        </where>-->
+<!--        LIMIT 0,1-->
+<!--    </select>-->
+
+<!--    <select id="selByUserEntity">-->
+<!--        SELECT product_pk as productPk, user_pk as userPk, category_pk as categoryPk , product_nm, memo, created_at as createdAt, updated_at as updatedAt,-->
+<!--        buying_check as buyingCheck, buying_date as buyingDate-->
+<!--        FROM t_purchase_product-->
+<!--        <where>-->
+<!--            product_pk = #{productPk}-->
+<!--            AND user_pk = #{userPk}-->
+<!--        </where>-->
+<!--    </select>-->
 
 
 

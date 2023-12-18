@@ -6,6 +6,8 @@ import lombok.Data;
 @Data
 @Schema(title = "장바구니 수정 Dto",description = "장바구니 수정 Dto")
 public class ProductPutDto {
+    @Schema(title = "유저Pk")
+    private int userPk;
     @Schema(title = "상품Pk")
     private int productPk;
     @Schema(title = "상품 이름")

@@ -10,10 +10,10 @@ public class ProductInsDto {
     @JsonIgnore
     private int productPk;
 
-    @Schema(title = "카테고리 pk")
-    private int categoryPk;
     @Schema(title = "유저 pk",defaultValue = "1")
     private int userPk;
+    @Schema(title = "카테고리 pk")
+    private int categoryPk;
     @Schema(title = "상품 이름")
     private String productNm;
     @Schema(title = "메모")

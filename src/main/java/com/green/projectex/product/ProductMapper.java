@@ -21,6 +21,10 @@ public interface ProductMapper {
 
     ProductEntity selEntity(int productPk);
 
+    ProductEntity selByEntity(int userPk);
+
+    ProductEntity selByUserEntity(int productPk,int userPk);
+
 
 
     int patchConfirmed(ProductDelDto dto);

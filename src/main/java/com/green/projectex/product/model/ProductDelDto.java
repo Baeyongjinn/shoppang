@@ -11,5 +11,5 @@ public class ProductDelDto {
     @Schema(title = "유저Pk")
     private int userPk;
     @Schema(title = "상품Pk")
-    private List<Integer> productPk;
+    private int productPk;
 }

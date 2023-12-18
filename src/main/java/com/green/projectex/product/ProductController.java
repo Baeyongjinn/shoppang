@@ -38,7 +38,7 @@ public class ProductController {
 
     @PatchMapping()
     @Operation(summary = "구매 확정", description = "구매 확정 처리")
-    public ResVo patchProductCheck(@RequestBody ProductCompleteDto dto) {
+    public ResVo patchProductCheck(ProductCompleteDto dto) {
         log.info("dto: {}",dto);
         return service.patchProductCheck(dto);
     }
@@ -51,7 +51,7 @@ public class ProductController {
     }
 
     @DeleteMapping()
-    @Operation(summary = "상품 삭제", description = "상품 삭제 처리(여러개 한번에 삭제 가능,구매 예정 상품은 영구 삭제,구매 확정 상품은 update로 삭제 처리 )")
+    @Operation(summary = "상품 삭제", description = "상품 삭제 처리(구매 예정 상품은 영구 삭제,구매 확정 상품은 update로 삭제 처리 )")
     public ResVo delProduct(ProductDelDto dto){
         return service.delProduct(dto);
     }
