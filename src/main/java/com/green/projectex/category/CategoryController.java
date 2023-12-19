@@ -33,6 +33,7 @@ public class CategoryController {
     }
 
     @DeleteMapping
+    @Operation(summary = "카테고리 삭제",description = "카테고리 삭제 처리")
     public ResVo delCategory(int categoryPk){
         return service.delCategory(categoryPk);
     }

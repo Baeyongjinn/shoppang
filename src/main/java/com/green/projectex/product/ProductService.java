@@ -8,7 +8,7 @@ import com.green.projectex.common.ResVo;
 import com.green.projectex.errortest.CategoryNotFoundException;
 
 import static com.green.projectex.errortest.ErrorCode.*;
-import static com.green.projectex.errortest.ErrorCodeNum.*;
+
 
 import com.green.projectex.product.model.*;
 import com.green.projectex.user.UserMapper;
@@ -31,14 +31,14 @@ public class ProductService {
         Integer userPk = userMapper.selByUser(dto.getUserPk());
 
         if (userPk == null) {
-            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
-                    , CODE_NULL_USER
+            throw new CategoryNotFoundException(String.format("ID[%s]: %s"
+                    , dto.getUserPk()
                     , NULL_USER_ERROR));
         }
 
         if (dto.getIsList() > 2 || dto.getIsList() < 0) {
-            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
-                    , CODE_LIST
+            throw new CategoryNotFoundException(String.format("ID[%s]: %s"
+                    , dto.getIsList()
                     , LIST_ERROR));
         }
 
@@ -50,13 +50,13 @@ public class ProductService {
         Integer categoryCheck = categoryMapper.selByCategoryPk(dto.getCategoryPk());
         Integer checkUserPk = userMapper.selByUser(dto.getUserPk());
         if (checkUserPk == null) {
-            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
-                    , CODE_NULL_USER
+            throw new CategoryNotFoundException(String.format("ID[%s]: %s"
+                    , dto.getUserPk()
                     , NULL_USER_ERROR));
         }
         if (categoryCheck == null) {
-            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
-                    , CODE_CATEGORY
+            throw new CategoryNotFoundException(String.format("ID[%s]: %s"
+                    , dto.getCategoryPk()
                     , CATEGORY_ERROR));
         }
 
@@ -70,24 +70,24 @@ public class ProductService {
         ProductEntity entity = mapper.selEntity(dto.getProductPk());
 
         if (checkUserPk == null) {
-            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
-                    , CODE_NULL_USER
+            throw new CategoryNotFoundException(String.format("ID[%s]: %s"
+                    , dto.getUserPk()
                     , NULL_USER_ERROR));
         }
         if (entity == null) {
-            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
-                    , CODE_PRODUCT
+            throw new CategoryNotFoundException(String.format("ID[%s]: %s"
+                    , dto.getProductPk()
                     , PRODUCT_ERROR));
         }
 
         if (entity.getUserPk() != dto.getUserPk()) {
-            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
-                    , CODE_USER_CHECK
+            throw new CategoryNotFoundException(String.format("ID[%s]: %s"
+                    , dto.getProductPk()
                     , CHECK_USER_ERROR));
         }
         if (entity.getBuyingCheck() != 0) {
-            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
-                    , CODE_BUYING_CHECK
+            throw new CategoryNotFoundException(String.format("ID[%s]: %s"
+                    , dto.getProductPk()
                     , BUYING_CHECK_ERROR));
         }
         int result = mapper.patchProduct(dto);
@@ -102,29 +102,29 @@ public class ProductService {
         Integer categoryCheck = categoryMapper.selByCategoryPk(dto.getCategoryPk());
 
         if (checkUserPk == null) {
-            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
-                    , CODE_NULL_USER
+            throw new CategoryNotFoundException(String.format("ID[%s]: %s"
+                    , dto.getUserPk()
                     , NULL_USER_ERROR));
         }
         if (entity == null) {
-            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
-                    , CODE_PRODUCT
+            throw new CategoryNotFoundException(String.format("ID[%s]: %s"
+                    , dto.getProductPk()
                     , PRODUCT_ERROR));
         }
         if (entity.getUserPk() != dto.getUserPk()) {
-            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
-                    , CODE_USER_CHECK
+            throw new CategoryNotFoundException(String.format("ID[%s]: %s"
+                    , dto.getProductPk()
                     , CHECK_USER_ERROR));
         }
 
         if (categoryCheck == null) {
-            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
-                    , CODE_CATEGORY
+            throw new CategoryNotFoundException(String.format("ID[%s]: %s"
+                    , dto.getCategoryPk()
                     , CATEGORY_ERROR));
         }
         if (entity.getBuyingCheck() != 0) {
-            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
-                    , CODE_BUYING_CHECK
+            throw new CategoryNotFoundException(String.format("ID[%s]: %s"
+                    , dto.getProductPk()
                     , BUYING_CHECK_ERROR));
 
         }
@@ -138,20 +138,20 @@ public class ProductService {
         Integer checkUserPk = userMapper.selByUser(dto.getUserPk());
         ProductEntity entity = mapper.selEntity(dto.getProductPk());
         if (checkUserPk == null) {
-            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
-                    , CODE_NULL_USER
+            throw new CategoryNotFoundException(String.format("ID[%s]: %s"
+                    , dto.getUserPk()
                     , NULL_USER_ERROR));
         }
 
         if (entity == null) {
-            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
-                    , CODE_PRODUCT
+            throw new CategoryNotFoundException(String.format("ID[%s]: %s"
+                    , dto.getProductPk()
                     , PRODUCT_ERROR));
         }
 
         if (entity.getUserPk() != dto.getUserPk()) {
-            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
-                    , CODE_USER_CHECK
+            throw new CategoryNotFoundException(String.format("ID[%s]: %s"
+                    , dto.getProductPk()
                     , CHECK_USER_ERROR));
         }
 
