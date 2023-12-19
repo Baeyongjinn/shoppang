@@ -25,9 +25,9 @@
                     AND a.buying_check = 1
                 </when>
             </choose>
-            <if test="createdAt != null and createdAt != ''">
-                AND DATE(a.created_at) = #{createdAt}
-            </if>
+<!--            <if test="createdAt != null and createdAt != ''">-->
+<!--                AND DATE(a.created_at) = #{createdAt}-->
+<!--            </if>-->
         </where>
     </select>
 
