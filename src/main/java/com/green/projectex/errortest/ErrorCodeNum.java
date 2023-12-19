@@ -1,7 +1,7 @@
 package com.green.projectex.errortest;
 
 public class ErrorCodeNum {
-    public final static String CODE_USER = "E001";
+    public final static String CODE_NULL_USER = "E001";
     public final static String CODE_CATEGORY = "E002";
     public final static String CODE_PRODUCT = "E003";
     public final static String CODE_USER_CHECK = "E004";
@@ -12,5 +12,6 @@ public class ErrorCodeNum {
     public final static String CODE_SIGNIN_UID = "E009";
     public final static String CODE_CATEGORY_CHECK = "E0010";
     public final static String CODE_NULL_CATEGORY = "E0011";
+
 
 }

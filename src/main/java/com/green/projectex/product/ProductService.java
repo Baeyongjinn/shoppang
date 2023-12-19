@@ -1,7 +1,9 @@
 package com.green.projectex.product;
 
 import com.green.projectex.category.CategoryMapper;
+
 import static com.green.projectex.common.Const.*;
+
 import com.green.projectex.common.ResVo;
 import com.green.projectex.errortest.CategoryNotFoundException;
 
@@ -27,16 +29,19 @@ public class ProductService {
     //구매 예정 상품 목록 리스트
     public List<ProductListVo> getProductList(ProductListDto dto) {
         Integer userPk = userMapper.selByUser(dto.getUserPk());
+
+        if (userPk == null) {
+            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
+                    , CODE_NULL_USER
+                    , NULL_USER_ERROR));
+        }
+
         if (dto.getIsList() > 2) {
             throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
                     , CODE_LIST
                     , LIST_ERROR));
         }
-        if (userPk == null) {
-            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
-                    , CODE_USER
-                    , USER_ERROR));
-        }
+
         return mapper.selProductList(dto);
     }
 
@@ -46,8 +51,8 @@ public class ProductService {
         Integer checkUserPk = userMapper.selByUser(dto.getUserPk());
         if (checkUserPk == null) {
             throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
-                    , CODE_USER
-                    , USER_ERROR));
+                    , CODE_NULL_USER
+                    , NULL_USER_ERROR));
         }
         if (categoryCheck == null) {
             throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
@@ -63,16 +68,18 @@ public class ProductService {
     public ResVo patchProductCheck(ProductCompleteDto dto) {
         Integer checkUserPk = userMapper.selByUser(dto.getUserPk());
         ProductEntity entity = mapper.selEntity(dto.getProductPk());
+
+        if (checkUserPk == null) {
+            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
+                    , CODE_NULL_USER
+                    , NULL_USER_ERROR));
+        }
         if (entity == null) {
             throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
                     , CODE_PRODUCT
                     , PRODUCT_ERROR));
         }
-        if (checkUserPk == null) {
-            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
-                    , CODE_USER
-                    , USER_ERROR));
-        }
+
         if (entity.getUserPk() != dto.getUserPk()) {
             throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
                     , CODE_USER_CHECK
@@ -95,19 +102,21 @@ public class ProductService {
         Integer checkUserPk = userMapper.selByUser(dto.getUserPk());
         if (checkUserPk == null) {
             throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
-                    , CODE_USER
-                    , USER_ERROR));
-        }
-        if (entity.getUserPk() != dto.getUserPk()) {
-            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
-                    , CODE_USER_CHECK
-                    , CHECK_USER_ERROR));
+                    , CODE_NULL_USER
+                    , NULL_USER_ERROR));
         }
         if (entity == null) {
             throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
                     , CODE_PRODUCT
                     , PRODUCT_ERROR));
         }
+
+        if (entity.getUserPk() != dto.getUserPk()) {
+            throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
+                    , CODE_USER_CHECK
+                    , CHECK_USER_ERROR));
+        }
+
         if (categoryCheck == null) {
             throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
                     , CODE_CATEGORY
@@ -130,8 +139,8 @@ public class ProductService {
         ProductEntity entity = mapper.selEntity(dto.getProductPk());
         if (checkUserPk == null) {
             throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
-                    , CODE_USER
-                    , USER_ERROR));
+                    , CODE_NULL_USER
+                    , NULL_USER_ERROR));
         }
 
         if (entity == null) {
