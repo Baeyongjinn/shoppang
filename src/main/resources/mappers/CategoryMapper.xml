@@ -16,14 +16,22 @@
         SET category_nm = #{categoryNm}
     </insert>
 
+    <!-- 예외처리용 -->
     <select id="selCategoryByNm">
         SELECT category_nm as categoryNm
         FROM t_category
         WHERE category_nm = #{categoryNm}
     </select>
+
+    <!-- 예외처리용 -->
     <select id="selByCategoryPk">
         SELECT category_pk as categoryPk
         FROM t_category
         WHERE category_pk = #{categoryPk}
     </select>
+
+    <delete id="delCategory">
+        DELETE FROM t_category
+        WHERE category_pk = #{categoryPk}
+    </delete>
 </mapper>

@@ -7,6 +7,7 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.ibatis.annotations.Delete;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -29,5 +30,10 @@ public class CategoryController {
     @Operation(summary = "카테고리 추가",description = "성공시: 1")
     public ResVo insCategory(@RequestBody CategoryInsDto dto){
         return service.insCategory(dto);
+    }
+
+    @DeleteMapping
+    public ResVo delCategory(int categoryPk){
+        return service.delCategory(categoryPk);
     }
 }

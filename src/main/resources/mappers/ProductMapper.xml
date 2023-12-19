@@ -50,7 +50,7 @@
         WHERE product_pk = #{productPk} AND user_pk = #{userPk}
     </update>
 
-    <!-- 구매 예정상품 수정 -->
+    <!-- 구매예정 상품 수정 -->
     <update id="putProduct">
         UPDATE t_purchase_product
         SET

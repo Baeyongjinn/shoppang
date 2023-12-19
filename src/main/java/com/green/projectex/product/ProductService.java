@@ -36,7 +36,7 @@ public class ProductService {
                     , NULL_USER_ERROR));
         }
 
-        if (dto.getIsList() > 2) {
+        if (dto.getIsList() > 2 || dto.getIsList() < 0) {
             throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
                     , CODE_LIST
                     , LIST_ERROR));
@@ -98,8 +98,9 @@ public class ProductService {
     // 상품 수정
     public ResVo putProduct(ProductPutDto dto) {
         ProductEntity entity = mapper.selEntity(dto.getProductPk());
-        Integer categoryCheck = categoryMapper.selByCategoryPk(dto.getCategoryPk());
         Integer checkUserPk = userMapper.selByUser(dto.getUserPk());
+        Integer categoryCheck = categoryMapper.selByCategoryPk(dto.getCategoryPk());
+
         if (checkUserPk == null) {
             throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
                     , CODE_NULL_USER
@@ -110,7 +111,6 @@ public class ProductService {
                     , CODE_PRODUCT
                     , PRODUCT_ERROR));
         }
-
         if (entity.getUserPk() != dto.getUserPk()) {
             throw new CategoryNotFoundException(String.format("CODE[%s]: %s"
                     , CODE_USER_CHECK

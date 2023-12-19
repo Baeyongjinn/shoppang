@@ -3,18 +3,21 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.green.projectex.user.UserMapper">
+    <!-- 로그인 체크 -->
     <select id="loginedCheck">
         SELECT upw
         FROM t_user
         WHERE uid = #{uid}
     </select>
 
+    <!-- 예외처리 회원정보 체크 -->
     <select id="selByUser">
         SELECT user_pk as userPk
         FROM t_user
         WHERE user_pk = #{userPk}
     </select>
 
+    <!-- 로그인 체크 -->
     <select id="selById">
         SELECT user_pk as userPk, uid,upw,nm
         FROM t_user

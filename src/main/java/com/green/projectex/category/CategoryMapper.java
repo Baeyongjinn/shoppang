@@ -14,4 +14,6 @@ public interface CategoryMapper {
     String selCategoryByNm(String CategoryNm);
 
     Integer selByCategoryPk(int categoryPk);
+
+    int delCategory(int categoryPk);
 }
