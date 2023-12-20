@@ -13,6 +13,7 @@ public class ErrorCode {
     public static final  String SIGNIN_UID_ERROR = "아이디가 다릅니다";
     public static final  String CATEGORY_CHECK_ERROR = "동일한 카테고리 이름이 있습니다";
     public static final  String NULL_CATEGORY_ERROR = "카테고리 이름을 입력 하세요";
+    public static final  String DEL_BUYING_ERROR = "삭제 처리된 상품 입니다";
 
 
 }

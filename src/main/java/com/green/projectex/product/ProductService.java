@@ -155,6 +155,11 @@ public class ProductService {
                     , dto.getProductPk()
                     , CHECK_USER_ERROR));
         }
+        if(entity.getBuyingCheck() == 2){
+            throw new CategoryNotFoundException(String.format("ID[%s]: %s"
+                    , dto.getProductPk()
+                    , DEL_BUYING_ERROR));
+        }
 
         mapper.delProduct(dto);
         mapper.patchConfirmed(dto);
