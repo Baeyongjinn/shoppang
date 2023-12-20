@@ -10,7 +10,6 @@ import com.green.projectex.errortest.CategoryNotFoundException;
 import static com.green.projectex.errortest.ErrorCode.*;
 
 
-
 import com.green.projectex.product.model.*;
 import com.green.projectex.user.UserMapper;
 import lombok.RequiredArgsConstructor;
@@ -30,23 +29,16 @@ public class ProductService {
     //구매 예정 상품 목록 리스트
     public List<ProductListVo> getProductList(ProductListDto dto) {
         Integer userPk = userMapper.selByUser(dto.getUserPk());
-
         if (userPk == null) {
             throw new CategoryNotFoundException(String.format("ID[%s]: %s"
                     , dto.getUserPk()
                     , NULL_USER_ERROR));
         }
 
-        if (dto.getIsList() > 2 || dto.getIsList() < 0) {
-            throw new CategoryNotFoundException(String.format("ID[%s]: %s"
-                    , dto.getIsList()
-                    , LIST_ERROR));
-        }
-
         return mapper.selProductList(dto);
     }
 
-    //상품 입력
+    //상품 등록
     public ResVo postProduct(ProductInsDto dto) {
         Integer categoryCheck = categoryMapper.selByCategoryPk(dto.getCategoryPk());
         Integer checkUserPk = userMapper.selByUser(dto.getUserPk());
@@ -155,7 +147,7 @@ public class ProductService {
                     , dto.getProductPk()
                     , CHECK_USER_ERROR));
         }
-        if(entity.getBuyingCheck() == 2){
+        if (entity.getBuyingCheck() == 2) {
             throw new CategoryNotFoundException(String.format("ID[%s]: %s"
                     , dto.getProductPk()
                     , DEL_BUYING_ERROR));

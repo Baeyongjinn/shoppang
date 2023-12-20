@@ -10,7 +10,7 @@ public class ProductInsDto {
     @JsonIgnore
     private int productPk;
 
-    @Schema(title = "유저 pk",defaultValue = "1")
+    @Schema(title = "유저 pk")
     private int userPk;
     @Schema(title = "카테고리 pk")
     private int categoryPk;
