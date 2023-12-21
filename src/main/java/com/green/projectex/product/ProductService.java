@@ -34,7 +34,6 @@ public class ProductService {
                     , dto.getUserPk()
                     , NULL_USER_ERROR));
         }
-
         return mapper.selProductList(dto);
     }
 
@@ -83,7 +82,7 @@ public class ProductService {
                     , dto.getProductPk()
                     , BUYING_CHECK_ERROR));
         }
-        int result = mapper.patchProduct(dto);
+        mapper.patchProduct(dto);
         return new ResVo(SUCCESS);
     }
 
