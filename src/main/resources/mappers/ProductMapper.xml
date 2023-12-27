@@ -6,7 +6,7 @@
 
     <!-- 구매 예정 상품 or 확정 상품 리스트 -->
     <select id="selProductList">
-        SELECT a.product_pk as productPk,
+        SELECT a.product_pk as productPk, b.category_pk as categoryPk,
         b.category_nm as categoryNm,a.product_nm as productNm ,a.memo,a.created_at as createdAt,
         a.buying_check as buyingCheck ,DATE(a.buying_date) as buyingDate
         FROM t_purchase_product a
@@ -15,13 +15,13 @@
         <where>
             a.user_pk = #{userPk}
             <choose>
-                <when test="isList == 0">
+                <when test="choiceList == 0">
                     AND a.buying_check <![CDATA[<]]> 2
                 </when>
-                <when test="isList == 1">
+                <when test="choiceList == 1">
                     AND a.buying_check = 0
                 </when>
-                <when test="isList == 2">
+                <when test="choiceList == 2">
                     AND a.buying_check = 1
                 </when>
             </choose>

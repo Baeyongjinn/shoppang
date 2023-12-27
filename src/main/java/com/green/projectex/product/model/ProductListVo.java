@@ -6,8 +6,10 @@ import lombok.Data;
 @Data
 @Schema(title = "리스트 응답 Vo",description = "장바구니 리스트 응답 Vo")
 public class ProductListVo {
-    @Schema(title = "상품 PK")
+    @Schema(title = "상품 Pk")
     private int productPk;
+    @Schema(title = "카테고리 Pk")
+    private int categoryPk;
     @Schema(title = "카테고리 이름")
     private String categoryNm;
     @Schema(title = "상품 이름")

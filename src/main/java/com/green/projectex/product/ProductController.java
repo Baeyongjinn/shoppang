@@ -29,9 +29,9 @@ public class ProductController {
     @Operation(summary = "구매 목록 조회", description = "구매 목록 조회 처리(isList:0 모두 보기, 1:구매예정 상품 보기 , 2: 구매확정 상품 보기) , buyingCheck 0: 구매예정, 1: 구매확정")
     public List<ProductListVo> getProductList(ProductListDto dto) {
         log.info("dto: {}", dto);
-        if (dto.getIsList() > 2 || dto.getIsList() < 0) {
+        if (dto.getChoiceList() > 2 || dto.getChoiceList()  < 0) {
             throw new CategoryNotFoundException(String.format("ID[%s]: %s"
-                    , dto.getIsList()
+                    , dto.getChoiceList()
                     , LIST_ERROR));
         }
         return service.getProductList(dto);

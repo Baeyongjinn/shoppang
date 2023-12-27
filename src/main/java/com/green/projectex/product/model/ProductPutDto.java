@@ -14,6 +14,6 @@ public class ProductPutDto {
     private String productNm;
     @Schema(title = "카테고리 Pk")
     private int categoryPk;
-    @Schema(title = "메모")
+    @Schema(title = "메모",defaultValue = "")
     private String memo;
 }
