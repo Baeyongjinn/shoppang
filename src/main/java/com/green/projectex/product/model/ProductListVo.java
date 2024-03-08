@@ -8,6 +8,8 @@ import lombok.Data;
 public class ProductListVo {
     @Schema(title = "상품 Pk")
     private int productPk;
+    @Schema(title = "유저 Pk")
+    private int userPk;
     @Schema(title = "카테고리 Pk")
     private int categoryPk;
     @Schema(title = "카테고리 이름")

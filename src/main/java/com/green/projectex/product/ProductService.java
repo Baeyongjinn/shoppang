@@ -16,6 +16,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -34,6 +35,7 @@ public class ProductService {
                     , dto.getUserPk()
                     , NULL_USER_ERROR));
         }
+
         return mapper.selProductList(dto);
     }
 
@@ -46,6 +48,7 @@ public class ProductService {
                     , dto.getUserPk()
                     , NULL_USER_ERROR));
         }
+
         if (categoryCheck == null) {
             throw new CategoryNotFoundException(String.format("ID[%s]: %s"
                     , dto.getCategoryPk()
@@ -58,8 +61,9 @@ public class ProductService {
 
     // 구매 확정
     public ResVo patchProductCheck(ProductCompleteDto dto) {
-        Integer checkUserPk = userMapper.selByUser(dto.getUserPk());
+        log.info("dto: {}",dto);
         ProductEntity entity = mapper.selEntity(dto.getProductPk());
+        Integer checkUserPk = userMapper.selByUser(dto.getUserPk());
 
         if (checkUserPk == null) {
             throw new CategoryNotFoundException(String.format("ID[%s]: %s"
@@ -77,10 +81,14 @@ public class ProductService {
                     , dto.getProductPk()
                     , CHECK_USER_ERROR));
         }
-        if (entity.getBuyingCheck() != 0) {
+        if (entity.getBuyingCheck() == 2) {
             throw new CategoryNotFoundException(String.format("ID[%s]: %s"
                     , dto.getProductPk()
                     , BUYING_CHECK_ERROR));
+        }
+        if (entity.getBuyingCheck() == 1) {
+            mapper.returnProduct(dto);
+            return new ResVo(2);
         }
         mapper.patchProduct(dto);
         return new ResVo(SUCCESS);

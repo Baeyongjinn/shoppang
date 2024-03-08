@@ -12,6 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import java.nio.file.attribute.UserPrincipalNotFoundException;
+import java.util.ArrayList;
 import java.util.List;
 
 import static com.green.projectex.errortest.ErrorCode.LIST_ERROR;
@@ -26,13 +27,16 @@ public class ProductController {
     private final ProductService service;
 
     @GetMapping
-    @Operation(summary = "구매 목록 조회", description = "구매 목록 조회 처리(isList:0 모두 보기, 1:구매예정 상품 보기 , 2: 구매확정 상품 보기) , buyingCheck 0: 구매예정, 1: 구매확정")
+    @Operation(summary = "구매 목록 조회", description = "구매 목록 조회 처리(choiceList: 0 모두 보기, 1:구매예정 상품 보기 , 2: 구매확정 상품 보기) , buyingCheck 0: 구매예정, 1: 구매확정")
     public List<ProductListVo> getProductList(ProductListDto dto) {
         log.info("dto: {}", dto);
         if (dto.getChoiceList() > 2 || dto.getChoiceList()  < 0) {
             throw new CategoryNotFoundException(String.format("ID[%s]: %s"
                     , dto.getChoiceList()
                     , LIST_ERROR));
+        }
+        if(dto.getUserPk() == 2){
+            return new ArrayList<>();
         }
         return service.getProductList(dto);
     }

@@ -19,13 +19,15 @@ public class UserService {
         String upw = mapper.loginedCheck(dto);
         UserEntity entity = mapper.selById(dto.getUid());
         if (entity == null) {
-            throw new CategoryNotFoundException(String.format("ID[%s]: %s"
-                    , dto.getUid()
-                    , SIGNIN_UID_ERROR));
+//            throw new CategoryNotFoundException(String.format("ID[%s]: %s"
+//                    , dto.getUid()
+//                    , SIGNIN_UID_ERROR));
+            return new ResVo(0);
         } else if (!upw.equals(dto.getUpw())) {
-            throw new CategoryNotFoundException(String.format("ID[%s]: %s"
-                    , dto.getUpw()
-                    , SIGNIN_UPW_ERROR));
+//            throw new CategoryNotFoundException(String.format("ID[%s]: %s"
+//                    , dto.getUpw()
+//                    , SIGNIN_UPW_ERROR));
+            return new ResVo(0);
         }
         return new ResVo(1);
     }

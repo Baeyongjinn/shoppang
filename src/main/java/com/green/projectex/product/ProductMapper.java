@@ -22,4 +22,6 @@ public interface ProductMapper {
     ProductEntity selEntity(int productPk);
 
     int patchConfirmed(ProductDelDto dto);
+
+    int returnProduct(ProductCompleteDto dto);
 }

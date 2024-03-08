@@ -6,7 +6,7 @@
 
     <!-- 구매 예정 상품 or 확정 상품 리스트 -->
     <select id="selProductList">
-        SELECT a.product_pk as productPk, b.category_pk as categoryPk,
+        SELECT a.product_pk as productPk, b.category_pk as categoryPk, a.user_pk as userPk,
         b.category_nm as categoryNm,a.product_nm as productNm ,a.memo,a.created_at as createdAt,
         a.buying_check as buyingCheck ,DATE(a.buying_date) as buyingDate
         FROM t_purchase_product a
@@ -25,10 +25,11 @@
                     AND a.buying_check = 1
                 </when>
             </choose>
-<!--            <if test="createdAt != null and createdAt != ''">-->
-<!--                AND DATE(a.created_at) = #{createdAt}-->
-<!--            </if>-->
+            <!--            <if test="createdAt != null and createdAt != ''">-->
+            <!--                AND DATE(a.created_at) = #{createdAt}-->
+            <!--            </if>-->
         </where>
+        ORDER BY a.created_at DESC
     </select>
 
     <!-- 상품 등록 -->
@@ -49,6 +50,12 @@
         ,buying_date = NOW()
         WHERE product_pk = #{productPk} AND user_pk = #{userPk}
     </update>
+    <update id="returnProduct">
+        UPDATE t_purchase_product
+        SET buying_check = 0
+        ,buying_date = NULL
+        WHERE product_pk = #{productPk} AND user_pk = #{userPk}
+    </update>
 
     <!-- 구매예정 상품 수정 -->
     <update id="putProduct">
@@ -58,11 +65,16 @@
             product_nm = #{productNm}
         </if>
         <if test="categoryPk != null and categoryPk != ''">
-            ,category_pk = #{categoryPk}
+        ,category_pk = #{categoryPk}
         </if>
-        <if test="memo != null and memo != ''">
-            ,memo = #{memo}
-        </if>
+        <choose>
+            <when test="memo != null and memo != ''">
+                ,memo = #{memo}
+            </when>
+            <otherwise>
+                ,memo = NULL
+            </otherwise>
+        </choose>
         WHERE product_pk = #{productPk} AND buying_check = 0 AND user_pk = #{userPk}
     </update>
 
@@ -71,33 +83,34 @@
         DELETE FROM t_purchase_product
         <where>
             product_pk =
-    <!-- <foreach collection="productPk" item="productPk" open="(" close=" )" separator=","> -->
-         #{productPk}
-    <!-- </foreach>  -->
-     AND buying_check = 0 AND user_pk = #{userPk}
- </where>
-</delete>
+            <!-- <foreach collection="productPk" item="productPk" open="(" close=" )" separator=","> -->
+            #{productPk}
+            <!-- </foreach>  -->
+            AND buying_check = 0 AND user_pk = #{userPk}
+        </where>
+    </delete>
 
-<!-- 구매 확정 상품 삭제시 2로바꾸기 -->
+    <!-- 구매 확정 상품 삭제시 2로바꾸기 -->
     <update id="patchConfirmed">
         UPDATE t_purchase_product
         <set>
             buying_check = 2
         </set>
         WHERE
-       <!-- <foreach collection="productPk" item="productPk" open="(" close=")" separator=","> -->
-            product_pk = #{productPk}
+        <!-- <foreach collection="productPk" item="productPk" open="(" close=")" separator=","> -->
+        product_pk = #{productPk}
         <!--</foreach> -->
         AND buying_check = 1 AND user_pk = #{userPk}
     </update>
 
     <!-- Entity -->
     <select id="selEntity">
-        SELECT product_pk as productPk, user_pk as userPk, category_pk as categoryPk , product_nm, memo, created_at as createdAt, updated_at as updatedAt,
+        SELECT product_pk as productPk, user_pk as userPk, category_pk as categoryPk , product_nm, memo, created_at as
+        createdAt, updated_at as updatedAt,
         buying_check as buyingCheck, buying_date as buyingDate
         FROM t_purchase_product
         <where>
-               product_pk = #{productPk}
+            product_pk = #{productPk}
         </where>
     </select>
 
